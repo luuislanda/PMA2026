@@ -259,13 +259,21 @@ hideInToc: true
 
 ---
 hideInToc: true
+layout: center
 ---
 
 
 # Changes from last year
 
-- Reduced scope of
+Most of these changes come from student feedback!
 
+- Reduced scope of technical requirements
+  - Removed the requirement for camera, geolocation and map views
+- Greater focus on design and live-coding
+- Introduction of Figma to live-coding sessions
+- Added more time for supervision
+- Removed presentation in-front of class
+- Added re-cap sessions and check-ins through course
 
 --- 
 zoom: 0.9
@@ -534,6 +542,16 @@ image: https://politikenplus.dk/filestore/3894a6511964100d6589344bc0bde43ff76e49
 
 - Can a balance be achieved between going away from the issues with smartphones and addiction, and bridging this accesibility gap that leaves many behind?
 
+
+---
+level: 2
+zoom: 0.5
+layout: center
+---
+
+# Some resources
+
+![learnit-resources](./assets/imgs/learnit-resources.png)
 
 ---
 level: 2
