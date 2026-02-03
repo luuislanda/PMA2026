@@ -9,9 +9,9 @@ hideInToc: true
 
 ---
 
-# Session 2: Designing and Coding Your First Screen 
+# Session X: 
 
-Intro to Figma, React Native and Expo
+Subtitle here
 
 <div class="abs-br m-6 flex gap-2">
   <a href="https://github.com/luuislanda/PMA2026" target="_blank" alt="GitHub" title="Open in GitHub"
@@ -29,6 +29,8 @@ hideInToc: true
 # Table of Contents
 
 <Toc maxDepth="1"></Toc>
+
+
 
 ---
 
