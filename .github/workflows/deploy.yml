@@ -44,7 +44,7 @@ jobs:
             
             echo "Building $folder_name from $file..."
             
-            nr build "$file" --out "dist/$folder_name" --base "/${{github.event.repository.name}}/$folder_name/"
+            nr build "$file" --out "dist/$folder_name" --base "./"
           done
 
       - name: Setup Pages
