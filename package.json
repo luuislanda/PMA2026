@@ -1,0 +1,14 @@
+{
+  "name": "pma-2026-slides",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev"
+  },
+  "dependencies": {
+    "@slidev/cli": "latest",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "playwright-chromium": "latest"
+  }
+}
