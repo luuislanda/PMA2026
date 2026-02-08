@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PMA 2026 Course lecture slides.">
+    <title>PMA 2026 Course Lectures</title>
+    <style>
+        :root {
+            --primary-color: #4b4bb4; 
+            --primary-hover: #3a3a8c;
+            --text-color: #1a202c;
+            --sub-text: #4a5568;
+            --bg-color: #f0ebeb;
+            --card-bg: #ffffff;
+            --focus-outline: #2d3748;
+        }
+        
+        body { 
+            font-family: system-ui, -apple-system, sans-serif; 
+            line-height: 1.6; 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 2rem; 
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        header { margin-bottom: 2rem; }
+        h1 { border-bottom: 4px solid var(--primary-color); padding-bottom: 0.5rem; }
+
+        .session-grid { display: grid; gap: 1.25rem; margin-top: 2rem; }
+
+        .session-card { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 1.5rem; 
+            background: var(--card-bg); 
+            border: 1px solid #d1d5db; 
+            border-radius: 8px; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .text-group { display: flex; flex-direction: column; }
+        .session-title { margin: 0; font-size: 1.25rem; color: var(--text-color); }
+        .session-subtitle { margin: 0; font-size: 0.95rem; color: var(--sub-text); font-weight: 400; }
+
+        .btn { 
+            display: inline-block;
+            background-color: var(--primary-color); 
+            color: #ffffff !important; 
+            text-decoration: none; 
+            padding: 0.75rem 1.5rem; 
+            border-radius: 6px; 
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+        .btn:hover { background-color: var(--primary-hover); }
+        .btn:focus { outline: 3px solid var(--focus-outline); outline-offset: 2px; }
+
+        footer { margin-top: 4rem; border-top: 1px solid #c8c2c2; padding-top: 1.5rem; font-size: 0.9rem; color: #4a5568; }
+        
+        @media (max-width: 600px) {
+            .session-card { flex-direction: column; align-items: flex-start; gap: 1rem; }
+            .btn { width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header role="banner">
+        <h1>PMA 2026 Course Lectures</h1>
+    </header>
+
+    <main id="main-content">
+        <p>Welcome. Please select a session below to view the interactive Slidev presentation.</p>
+        
+        <nav aria-label="Session Lectures">
+            <div class="session-grid">
+                
+                <section class="session-card" aria-labelledby="h-s01">
+                    <div class="text-group">
+                        <h2 id="h-s01" class="session-title">Session 01: Introduction</h2>
+                        <p class="session-subtitle">Introduction to course structure and programming for mobile applications in general</p>
+                    </div>
+                    <a class="btn" href="./session01/" aria-label="View slides for Session 01">View Slides</a>
+                </section>
+
+                <section class="session-card" aria-labelledby="h-s02">
+                    <div class="text-group">
+                        <h2 id="h-s02" class="session-title">Session 2: Designing and Coding Your First Screen </h2>
+                        <p class="session-subtitle">Intro to Figma, React Native and Expo</p>
+                    </div>
+                    <a class="btn" href="./session02/" aria-label="View slides for Session 02">View Slides</a>
+                </section>
+
+
+</body>
+</html>
