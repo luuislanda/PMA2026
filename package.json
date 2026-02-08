@@ -7,8 +7,8 @@
   },
   "dependencies": {
     "@slidev/cli": "latest",
-    "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest",
+    "slidev-theme-the-unnamed": "latest",
+    "slidev-theme-academic": "latest",
     "playwright-chromium": "latest"
   }
 }
