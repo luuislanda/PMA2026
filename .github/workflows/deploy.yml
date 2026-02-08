@@ -28,7 +28,7 @@ jobs:
         run: npm i -g @antfu/ni
 
       - name: Install dependencies
-        run: nci
+        run: npm install
 
       - name: Build All Slides
         run: |
