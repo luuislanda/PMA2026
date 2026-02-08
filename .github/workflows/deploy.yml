@@ -33,19 +33,18 @@ jobs:
       - name: Build All Slides
         run: |
           mkdir -p dist
-
           touch dist/.nojekyll
-          
           cp index.html dist/index.html
           
-
-          for file in sessions/session*/lecture/*.md; do
+          find sessions -name "*.md" | while read file; do
             folder_name=$(echo "$file" | cut -d'/' -f2)
             
-            echo "Building $folder_name from $file..."
-            
-            nr build "$file" --out "dist/$folder_name" --base "./"
+     
+            nr build "$file" --out "dist/$folder_name" --base "/${{github.event.repository.name}}/$folder_name/"
           done
+          
+          echo "FINAL DIST CONTENTS:"
+          ls -R dist
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
