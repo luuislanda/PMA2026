@@ -36,7 +36,7 @@ jobs:
           touch dist/.nojekyll
           cp index.html dist/index.html
           
-          find sessions -name "*.md" | while read file; do
+          find sessions -name "slides.md" | while read file; do
             folder_name=$(echo "$file" | cut -d'/' -f2)
             
      
