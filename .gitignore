@@ -1,3 +1,5 @@
 # Ignore specific files and directories in lecture folders only
 sessions/*/lecture/package-lock.json
 sessions/*/lecture/node_modules/
+
+.zip
