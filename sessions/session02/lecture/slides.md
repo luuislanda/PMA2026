@@ -61,6 +61,12 @@ I have added a [troubleshooting document](https://link.com) to LearnIT, there yo
 
 If you are still having issues, follow the guide on how to use the web browser for now
 
+<style>
+h1 {
+  text-align:center;
+}
+</style>
+
 ---
 layout: center
 hideInToc: true
@@ -103,7 +109,13 @@ hideInToc: true
 layout: center
 ---
 
-# Let's go to VSCode and change/break some things
+# Let's go to VSCode and change some things
+
+<style>
+h1 {
+  text-align:center;
+}
+</style>
 
 
 ---
@@ -176,6 +188,12 @@ layout: center
 
 Let's go over the components while we code the Figma design
 
+<style>
+h1 {
+  text-align:center;
+}
+</style>
+
 
 ---
 level: 2
@@ -208,7 +226,7 @@ zoom: 0.95
 
 - When coding a screen, try to think of all the _"Views"_ inside it
 - It's a good idea to use `<View>` often, specially if you notice that some elements are connected or go often together
-- Don't be shy with your `<View>`'s. If you find that styling something inside a `<View>` is hard, try adding a `<View>` to the part that is hard to style (more on this soon)
+- Don't be shy with your `<View>`'s. If you find that styling something is hard, try wrapping it in a `<View>`
 
 <br>
 
@@ -237,6 +255,46 @@ zoom: 0.95
 
 ![Post-banner](./assets/imgs/post_banner.png)
 
+---
+level: 3
+hideinToc: true
+layout: two-cols
+---
+
+# Fimga ↔️ React Native
+
+![Figma Structure](./assets/imgs/figma-structure.png)
+::right::
+
+<br>
+<br>
+
+```js {height:"100%""}
+export default function App() {
+  return (
+    <View style={styles.container}>
+    
+      {/* Post Header */}
+      <View>
+        
+      </View>
+
+      {/* Post Image */}
+      <View>
+
+      </View>
+
+
+      {/* Post Text */}
+      <View>
+
+      </View>
+
+
+    </View>
+  );
+}
+```
 
 
 
@@ -294,6 +352,71 @@ backgroundSize: 70%
   - `em`, `vh` and `rem` don't work in RN
 - While we will touch upon a lot of stylesheet in this course, we approach it more from a structure context.
 
+---
+level: 2
+---
+
+
+# `<Text>`
+
+> [Click here to see the official documentation](https://reactnative.dev/docs/text)
+
+
+- Probably the simplest component
+- Can nest other `<Text>` components, here's an example:
+
+```js {all||7-12|7-12,18-31}{maxHeight:'70%'}
+import { StyleSheet, Image, Text, View } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      {/* Post Text */}
+      <View style={styles.postBodyContainer}>
+        <Text style={styles.parentText}>
+          <Text style={styles.postBodyUsername}>snow.biker</Text>
+          <Text style={styles.postBodyText}>On my way to work, I love it when I get to bike in the snow!</Text>
+        </Text>
+      </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  postBodyContainer: {
+    margin: 20,
+  },
+  parentText: {
+    color: 'white' //this is inherited to all the <Text> elements inside parentText
+  },
+  postBodyUsername: {
+    fontWeight: 'bold'
+  },
+  postBodyText: { //this can be left blank as well :) can help in structuring code
+  }
+});
+
+```
+
+<!-- 
+<Text numberOfLines={1} ellipsizeMode="tail">
+  This is a very long text that will be truncated with an ellipsis...
+</Text>
+-->
+
+---
+level: 3
+hideinToc: true
+---
+
+# Nested `<Text>` Components
+
+- Nested `<Text>` components lose their "box" properties and behave like words in a sentence. 
+  - They flow one after another horizontally and wrap as a single unit.
+  - this is why you can’t use flexbox, padding, or margin on the inner elements in a nested `<Text>` component
+
+- Unlike most components in React Native, nested `<Text>` will _*actually inherit styles*_ from its parent `<Text>` component. 
+  - If you set a font size or color on the outer wrapper, all nested children will follow suit unless you specifically override them.
 
 
 
@@ -318,52 +441,35 @@ backgroundSize: 60%
 - Can be styled to have round corners, different transparency, etc.
 
 ---
-level: 2
+level: 3
+hideInToc: true
+layout: center
 ---
 
+# `<Image>`
 
-# `<Text>`
+- Unlike the other components we've seen `<Image>` is a [**self-closing component**](https://eslint.style/rules/jsx-self-closing-comp)
+- This means that you do not need to write `<Image> </Image>` 
+  - Rather, the syntax is like this: `<Image/>`
 
-> [Click here to see the official documentation](https://reactnative.dev/docs/text)
+- There are a few but in this course we won't see more than 3
 
+- Keep this in mind to avoid some errors
 
-- Probably the simplest component
-- Can nest other `<Text>` components, here's an example:
+Here an example of how an `<Image>` element looks like
 
-```js {all|3-6|all}{maxHeight:'300px'}
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.baseText}>
-      I am bold
-      <Text style={styles.innerText}> and red</Text>
-    </Text>
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  baseText: {
-    fontWeight: 'bold',
-  },
-  innerText: {
-    color: 'red',
-  }
-});
-
+```js
+<Image
+  style={styles.exampleImage}
+  source={require('https://en.wikipedia.org/wiki/Cat#/media/File:Sheba1.JPG')}
+/>
 ```
 
-<!-- 
-<Text numberOfLines={1} ellipsizeMode="tail">
-  This is a very long text that will be truncated with an ellipsis...
-</Text>
--->
+<style>
+  h1 {
+    text-align: center;
+  }
+  </style>
 
 ---
 layout: center
