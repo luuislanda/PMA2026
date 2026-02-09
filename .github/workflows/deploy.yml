@@ -32,19 +32,29 @@ jobs:
 
       - name: Build All Slides
         run: |
+          # 1. Prepare the output directory
           mkdir -p dist
           touch dist/.nojekyll
           cp index.html dist/index.html
-          
-          find sessions -name "slides.md" | while read file; do
+
+          find sessions -path "*/lecture/slides.md" | while read -r file; do
             folder_name=$(echo "$file" | cut -d'/' -f2)
             
-     
-            nr build "$file" --out "dist/$folder_name" --base "/${{github.event.repository.name}}/$folder_name/"
+            echo "🚀 Building $folder_name from $file"
+            
+            npx slidev build "$file" \
+              --out "dist/$folder_name" \
+              --base "/PMA2026/$folder_name/"
           done
-          
-          echo "FINAL DIST CONTENTS:"
+
+
           ls -R dist
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # IMPORTANT: This MUST be dist
+          path: dist
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
