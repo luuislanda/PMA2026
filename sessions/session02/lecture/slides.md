@@ -57,7 +57,7 @@ hideInToc: true
 
 # If Expo fails to connect to your phone ...
 
-I have added a [troubleshooting document](https://link.com) to LearnIT, there you have a few options on what to do
+I have added a [troubleshooting document](https://github.com/luuislanda/PMA2026/tree/main/troubleshooting) to LearnIT, there you have a few options on what to do
 
 If you are still having issues, follow the guide on how to use the web browser for now
 
@@ -443,33 +443,30 @@ backgroundSize: 60%
 ---
 level: 3
 hideInToc: true
-layout: center
 ---
 
 # `<Image>`
 
 - Unlike the other components we've seen `<Image>` is a [**self-closing component**](https://eslint.style/rules/jsx-self-closing-comp)
-- This means that you do not need to write `<Image> </Image>` 
-  - Rather, the syntax is like this: `<Image/>`
+- This means that you do not need to write `<Image> </Image>`. Rather, the syntax is like this: `<Image/>`
 
 - There are a few but in this course we won't see more than 3
 
 - Keep this in mind to avoid some errors
 
-Here an example of how an `<Image>` element looks like
+<br>
 
-```js
-<Image
-  style={styles.exampleImage}
-  source={require('https://en.wikipedia.org/wiki/Cat#/media/File:Sheba1.JPG')}
+Here an example of how an `<Image>` element looks like:
+
+```js{1,6|1-6}
+<Image 
+  style={styles.postImage}
+  source={{
+    uri: 'https://upload.wikimedia.org/wikipedia/commons/5/53/Sheba1.JPG', //gets the image from the internet
+  }}
 />
 ```
 
-<style>
-  h1 {
-    text-align: center;
-  }
-  </style>
 
 ---
 layout: center
