@@ -32,28 +32,31 @@ jobs:
 
       - name: Build All Slides
         run: |
-          # 1. Prepare the output directory
           mkdir -p dist
           touch dist/.nojekyll
           cp index.html dist/index.html
+          
+          OUTPUT_DIR=$(pwd)/dist
+          echo "Targeting output directory: $OUTPUT_DIR"
 
-          find sessions -path "*/lecture/slides.md" | while read -r file; do
+          find sessions -name "slides.md" | grep "/lecture/" | while read -r file; do
             folder_name=$(echo "$file" | cut -d'/' -f2)
             
-            echo "🚀 Building $folder_name from $file"
+            echo "BUILDING: $folder_name"
+            echo "FILE: $file"
+            echo "OUT: $OUTPUT_DIR/$folder_name"
             
             npx slidev build "$file" \
-              --out "dist/$folder_name" \
+              --out "$OUTPUT_DIR/$folder_name" \
               --base "/PMA2026/$folder_name/"
           done
 
-
+          echo "dist directory check:"
           ls -R dist
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # IMPORTANT: This MUST be dist
           path: dist
 
       - name: Setup Pages
