@@ -3,3 +3,5 @@ sessions/*/lecture/package-lock.json
 sessions/*/lecture/node_modules/
 
 .zip
+
+.DS_Store
