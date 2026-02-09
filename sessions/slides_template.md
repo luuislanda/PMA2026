@@ -1,12 +1,10 @@
 ---
-theme: the-unnamed
-background: https://cover.sli.dev
+theme: academic
 class: 'text-center'
 transition: slide-left
-title: PMA2026 Session 2
+title: PMA2026 Session X
 mdc: true
 hideInToc: true
-
 ---
 
 # Session X: 
