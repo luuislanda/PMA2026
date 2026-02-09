@@ -8,15 +8,15 @@ Welcome to the official Github repo for the Programming Mobile Applications Clas
 > To view the slides, you can go to this website:
 > https://luuislanda.github.io/PMA2026/
 
-## This repo and the course> [!WARNING]
+## This repo and the course
 
 There is nothing in this repository that is not available in LearnIT! This means you not need to be here at all if it's something you find too intimidating.
 
-I use Git myself to keep track of things and also because I believe in open source :) 
+It is mainly a personal repositry, I use Git to keep track of things and also because I believe in open source :^) 
 
-It also allows for much faster document editing, meaning updates to things like the cheatsheet will be much easier to manage for me.
+It also allows for much faster document editing, allows me to host my slides online keeping the interactive part, and it's how I work with code.
 
-So once again, if you find Git confusing or too annoying to handle, remember everything here will be in LearnIT.
+So once again, if you find Git confusing or too annoying to handle, **remember everything here will be in LearnIT**.
 
 All of that said, if you find the programming part interesting and something you'd like to do in the future, Git is an industry standard and learning it is very recommended 
 
