@@ -30,6 +30,33 @@ hideInToc: true
 <Toc maxDepth="2"></Toc>
 
 ---
+hideInToc: true
+---
+
+# Course Announcements
+
+- As this is our first hands-on class, towards the end I'd like to hear from you about the pace
+- Group signups for Assignment #2 and Exam are officially open, **deadline: 13th of March**
+
+<br>
+
+<img src="./assets/imgs/groups.png" width=350 style="display: block; margin: 0 auto">
+
+<br>
+
+  - Register your group on LearnIT, [direct link here](https://learnit.itu.dk/mod/groupselect/view.php?id=243805&redirect=1)
+  - Please avoid calling your group something like "Group 2", "2", "Group ??"
+  - For any changes/modifications after the deadline, email me
+  - You can also work by yourself, just register a group with 1 member.
+
+<style>
+h1 {
+  text-align:center;
+}
+</style>
+
+
+---
 
 # Setting Up a Project
 
@@ -59,7 +86,7 @@ hideInToc: true
 
 I have added a [troubleshooting document](https://github.com/luuislanda/PMA2026/tree/main/troubleshooting) to LearnIT, there you have a few options on what to do
 
-If you are still having issues, follow the guide on how to use the web browser for now
+If you are still having issues, follow the guide on how to use the web browser for now and reach out to me or the TAs for further help.
 
 <style>
 h1 {
@@ -244,9 +271,9 @@ zoom: 0.95
 
 ```js
 <View style={styles.postHeader}>
-  <Image> // profile pic
+  <Image/> // profile pic
   <Text></Text> //username & subtitle/location
-  <Image> //icon
+  <Image/> //icon
 </View>
 ```
 
@@ -261,7 +288,7 @@ hideinToc: true
 layout: two-cols
 ---
 
-# Fimga ↔️ React Native
+# Fimga ↔ React Native
 
 ![Figma Structure](./assets/imgs/figma-structure.png)
 ::right::
@@ -510,10 +537,8 @@ backgroundSize: 50%
 # Exercise - Session 2
 
 - **On LearnIT, you can find the detailed description for the exercise of today**
+- Part 1: Finish what we did in class
 - Try to only use components we've seen today
-- Save what you will make, because you will be able to use it for Exercise 3 and Assignment #1
-
-<br>
-<br>
+- Part 2: Start a new design. Save what you will make, because you will be able to use it for Exercise 3 and Assignment #1
 
 <p align="center">See you next week!</p>
