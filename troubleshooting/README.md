@@ -1,5 +1,7 @@
 # General Troubleshooting Guide
 
+> If the images are too small, click on them to get the original ones.
+
 This document will collect all advice regarding any troubleshooting we see in the course, this can include things related to Expo, VsCode, the terminal, etc.
 
 ## Expo
