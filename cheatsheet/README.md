@@ -36,6 +36,10 @@ Here's how I recommend you go about starting your projects.
 
 ## Session 2
 
+### Component Attributes
+
+### Styling
+
 ### Comments
 
 The common way to write comments in React Native is to use the `/*` & `*/` characters like so:
