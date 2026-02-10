@@ -49,6 +49,7 @@ jobs:
             npx slidev build "$file" \
               --out "$OUTPUT_DIR/$folder_name" \
               --base "/PMA2026/$folder_name/"
+              --router-mode hash
           done
 
           echo "dist directory check:"
