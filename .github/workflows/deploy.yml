@@ -39,17 +39,17 @@ jobs:
           OUTPUT_DIR=$(pwd)/dist
           echo "Targeting output directory: $OUTPUT_DIR"
 
+
+          #hashmode hack
           find sessions -name "slides.md" | grep "/lecture/" | while read -r file; do
             folder_name=$(echo "$file" | cut -d'/' -f2)
             
-            echo "BUILDING: $folder_name"
-            echo "FILE: $file"
-            echo "OUT: $OUTPUT_DIR/$folder_name"
+            sed -i '0,/^---/{s/^---/---\nrouterMode: hash/}' "$file"
             
+            # Standard build command (without the invalid router flags)
             npx slidev build "$file" \
               --out "$OUTPUT_DIR/$folder_name" \
-              --base "/PMA2026/$folder_name/" \
-              --router-mode hash
+              --base "/PMA2026/$folder_name/"
           done
 
           echo "dist directory check:"
