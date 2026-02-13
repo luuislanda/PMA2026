@@ -4,7 +4,6 @@
 
 - This is an individual assignment
 - There will be no supervision for this assignment, only written feedback
-- 
 
 ### Dates
 
@@ -71,6 +70,7 @@ The one-screen application must include at least one of the following components
 This prototype images an app where two songs are streamed to the users daily. The user can change theoretically song and rewind the song. However, only the change song interaction is implemented. The interactive `<Button>` changes the following elements:
   - Album Cover 
   - Song Name
+
 
 ![button_state1](assets/imgs/button_state1.png)
 
