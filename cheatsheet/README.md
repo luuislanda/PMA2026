@@ -12,6 +12,8 @@ Over the course of the semester, this page will be updated with tips and tricks 
 
 
 
+
+
 ## Session 1
 
 ### Setting Up a New Project
