@@ -21,7 +21,7 @@ The goal of this assignment is for you to create a one-screen application protot
 
 The app is a music/podcast player. The screen you must design is the screen where the user sees what is currently playing. The protoype must look similar to this screen from the Spotify music player:
 
-[Image]
+![Assignment1 Example](assets/imgs/exercise_example.png)
 
 OBS: Please note that "similar" is used to describe your design. It is not expected that you create a perfect copy of the design, though you can try as much as you can.  See below for some examples of how the one-screen app can look like.
 
@@ -74,7 +74,7 @@ This prototype images an app where two songs are streamed to the users daily. Th
 
 ![button_state1](assets/imgs/button_state1.png)
 
-![button_state2](assets/imgs/button_screen1.png)
+![button_state2](assets/imgs/button_state2.png)
 
 
 
