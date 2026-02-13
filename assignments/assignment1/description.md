@@ -77,14 +77,14 @@ This prototype images an app where two songs are streamed to the users daily. Th
   - Album Cover 
   - Song Name
 
-<p>
 
+<p align="center">
 <img src="assets/imgs/button_state1.png" width="400">
-
-<img src="assets/imgs/button_state2.png" width="400">
-
-
 </p>
+<p align="center">
+<img src="assets/imgs/button_state2.png" width="400">
+</p>
+
 
 
 ### Interaction with `<Pressable>`
@@ -93,9 +93,12 @@ This prototype is more like a typical music player. The interaction in this case
   - Album Cover
   - Song Name
 
-![pressable_state1](assets/imgs/pressable_state1.png)
-
-![pressable_state2](assets/imgs/pressable_state2.png)
+<p align="center">
+<img src="assets/imgs/pressable_state1.png" width="400">
+</p>
+<p align="center">
+<img src="assets/imgs/pressable_state2.png" width="400">
+</p>
 
 ## Template Code
 
