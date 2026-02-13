@@ -77,10 +77,14 @@ This prototype images an app where two songs are streamed to the users daily. Th
   - Album Cover 
   - Song Name
 
-![button_state1](assets/imgs/button_state1.png)
+<p>
 
-![button_state2](assets/imgs/button_state2.png)
+<img src="assets/imgs/button_state1.png" width="400">
 
+<img src="assets/imgs/button_state2.png" width="400">
+
+
+</p>
 
 
 ### Interaction with `<Pressable>`
