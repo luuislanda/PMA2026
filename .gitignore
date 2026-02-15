@@ -1,8 +1,6 @@
 # Ignores node_modules for the coding examples
-sessions/*/lecture/package-lock.json
-sessions/*/lecture/node_modules/
-sessions/*/lecture/package-lock.json
-sessions/*/lecture/node_modules/
+sessions/**/package-lock.json
+sessions/**/node_modules/
 
 # Ignores .zip files used to submit to LearnIT
 .zip
