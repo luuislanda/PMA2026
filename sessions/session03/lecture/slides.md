@@ -32,17 +32,17 @@ hideInToc: true
 
 ---
 
-# Announcements and Janitoring
+# Course Announcements
 
 - This lecture has changed because of the feedback you gave me last week
-- Cheatsheets and Guides on LearnIT
+- Added `Cheatsheet`s and `Guides` on LearnIT
 - Extra Figma sessions during StudyLab, dates will be announced soon
-- Exam Syllabus has been updated
 - Remember to register your group!
   - Groups can be max 4 people. It's out of my hands sorry
   - Register the group even if you are doing it alone, otherwise you'll miss out on supervision
 - Figma and Live-coding files will be put on LearnIT at 08.00
   - You can try to code along or see how the file is built
+
 
 
 
@@ -99,8 +99,18 @@ level: 2
 
 # Assignment #1
 
+---
+hideInToc: true
+layout: center
+---
+
+# Questions?
+
 
 ---
+hideInToc: true
+---
+
 
 # Break!
 
@@ -118,6 +128,14 @@ Follow the link to the design file on LearnIT or [click here](https://example.co
 # The `<Button>` Component
 
 
+---
+
+# 
+
+
+---
+
 # See you in the exercises
 
-Rooms: 
+## Rooms:
+
