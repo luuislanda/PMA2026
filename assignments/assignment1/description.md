@@ -6,6 +6,7 @@
 - [Practical Information](#practical-information)
   - [Dates](#dates)
   - [How to Submit Your Assignment](#how-to-submit-your-assignment)
+  - [File Submission Checklist](#file-submission-checklist)
 - [Description of Assignment](#description-of-assignment)
 - [Design and Technical Requirements](#design-and-technical-requirements)
   - [Minimum Technical Requirements](#minimum-technical-requirements)
@@ -20,6 +21,7 @@
 
 ## Relation of Assignment to your Exam
 - Your exam will require you to submit a reflection on both assignments
+- The reflections will be about the use of Figma and how to translate the design there to React Native
 - Each assignment reflection will be 0.5 pages, making it a total of 1 page
 - Tip: keep notes on learnings and challenges when doing the three assignments
 
@@ -33,13 +35,13 @@
 
 Introduced: 17th of February
 
-Deadline:
+Deadline: 6th of March
 
 ### How to Submit Your Assignment
 
 Each student must submit a `.zip` file containing a folder with the files of the app and a one-page text file (preferably .pdf or .txt) with a link to the Figma design file on which the code is based.
 
-If you are unsure of how to make a `.zip` file, or your `.zip` file is taking too long to be made/uploaded. Please follow the <u>**[file submission guide]()**</u>
+If you are unsure of how to make a `.zip` file, or your `.zip` file is taking too long to be made/uploaded. Please follow the <u>**[file submission guide](https://github.com/luuislanda/PMA2026/tree/main/guides/submission-guide)**</u>
 
 Example of what's inside the submitted `.zip` file:
 
@@ -53,6 +55,19 @@ Example of what's inside the submitted `.zip` file:
 │   └── package.json
 ├── figma-link.txt
 ```
+
+### File Submission Checklist
+
+Here is the checklist for the files that must be submitted for this assignment:
+
+- [ ] The folder with your working code
+  - [ ] App.js
+  - [ ] app.json
+  - [ ] assets (folder)
+  - [ ] index.js
+  - [ ] package_lock.json
+  - [ ] package.json
+- [ ] text file (.txt or .pdf) with links to Figma files
 
 ## Description of Assignment
 
