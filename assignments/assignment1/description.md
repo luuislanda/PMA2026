@@ -43,18 +43,6 @@ Each student must submit a `.zip` file containing a folder with the files of the
 
 If you are unsure of how to make a `.zip` file, or your `.zip` file is taking too long to be made/uploaded. Please follow the <u>**[file submission guide](https://github.com/luuislanda/PMA2026/tree/main/guides/submission-guide)**</u>
 
-Example of what's inside the submitted `.zip` file:
-
-```md
-├── assignment1-code (folder)
-│   └── App.js
-│   └── app.json
-│   └── assets (folder)
-│   └── index.js
-│   └── package_lock.json
-│   └── package.json
-├── figma-link.txt
-```
 
 ### File Submission Checklist
 
