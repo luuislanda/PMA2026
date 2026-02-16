@@ -828,6 +828,7 @@ zoom: 1.2
 ---
 layout: image-right
 image: https://i.imgflip.com/3eu62b.jpg
+backgroundSize: "70%"
 ---
 
 # Exercise 3
@@ -836,6 +837,7 @@ You'll do:
 
 1. A few small exercises to practice using the `<Button />` component
 2. Use the rest of the time for your Assignment #1
+
 _3. Optional: A sneak peek into state using `<Button />`_
 
 #### Rooms:
