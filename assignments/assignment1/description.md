@@ -1,6 +1,6 @@
 # Assignment 1 
 
-
+**Table of Contents**
 
 - [Relation of Assignment to your Exam](#relation-of-assignment-to-your-exam)
 - [Practical Information](#practical-information)
@@ -17,10 +17,6 @@
   - [Interaction with `<Button>`](#interaction-with-button)
   - [Interaction with `<Pressable>`](#interaction-with-pressable)
 - [Template Code](#template-code)
-
-
-
-
 
 ## Relation of Assignment to your Exam
 - Your exam will require you to submit a reflection on both assignments
@@ -160,6 +156,8 @@ The following elements change:
 
 ## Template Code
 
-I have prepared a template that you can use to start, it can be download on LearnIT, or [clicking here](linkkkkk). 
+I have prepared a template that you can use to start, it can be download on LearnIT, or [clicking here](https://github.com/luuislanda/PMA2026/blob/main/assignments/assignment1/code-template/App.js). 
 
-Additionally, feel free to repurpose any of the code we have seen through the first 4 sessions!
+Additionally, feel free to repurpose any of the code we have seen through the first 4 sessions
+
+Good luck and if you have any questions, reach out to the teaching team!
