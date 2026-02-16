@@ -354,7 +354,7 @@ zoom: 0.95
 # Styles
 
 - Styles are the properties that define the look and feel of your components
-- Components have different style capabilities! Check the documentation or the [cheatsheet]
+- Components have different style capabilities! Check the documentation or the [cheatsheet](https://github.com/luuislanda/PMA2026/tree/main/cheatsheet)
 - They are initialized using a "StyleSheet" at the bottom of your file:
 
   0. Ensure StyleSheet is imported
@@ -455,7 +455,7 @@ layout: center
 
 ## Let's go through we code we did last time
 
-While we look at the [cheatsheet]()
+While we look at the [cheatsheet](https://github.com/luuislanda/PMA2026/tree/main/cheatsheet).
 
 <style>
 h1 {
