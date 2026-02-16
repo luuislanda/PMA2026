@@ -802,19 +802,6 @@ const styles = StyleSheet.create({
 ---
 level: 2
 hideInToc: true
-layout: image-right
----
-
-### Buttons are our first step to interactivity
-
-- Since they can't really be styled, people use other methods
-- Next week we'll look at `<Pressable>` which is much more flexible when it comes to styling
-
-
-
----
-level: 2
-hideInToc: true
 layout: center
 ---
 
@@ -840,15 +827,16 @@ zoom: 1.2
 
 ---
 layout: image-right
-image: https://media.tenor.com/r1eMxzMvWGQAAAAM/easy-button-that-was-easy.gif
+image: https://i.imgflip.com/3eu62b.jpg
 ---
 
 # Exercise 3
 
-You'll do two things:
+You'll do:
 
 1. A few small exercises to practice using the `<Button />` component
 2. Use the rest of the time for your Assignment #1
+_3. Optional: A sneak peek into state using `<Button />`_
 
 #### Rooms:
 
