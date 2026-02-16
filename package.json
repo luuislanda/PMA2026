@@ -9,6 +9,7 @@
     "@slidev/cli": "latest",
     "slidev-theme-the-unnamed": "latest",
     "slidev-theme-academic": "latest",
-    "playwright-chromium": "latest"
+    "playwright-chromium": "latest",
+    "slidev-addon-typed" : "latest"
   }
 }
