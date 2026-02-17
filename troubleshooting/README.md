@@ -14,6 +14,7 @@ This is a very common issue you'll encounter, specially if you are at ITU! First
 
 - [ ] Check that both your phone and your computer are on the same Wifi network
     - Sometimes your phone is on `eduroam` and your computer is on `ITU++`. Before trying anything else, **make sure they are both in the same network**
+        - So far it seems that `ITU++` is working the best for everyone, so I recommend both your phone and computer are on that network!
     - Since ITU's networks are not always the best, you can try connecting your computer to your phone via a hotspot
 - [ ] Do you have a VPN active at the moment? Turn it off while you work on your project
     - VPNs often have a feature that blocks all local network communications, meaning, it will block your phone from reaching your computer. If you really want to keep the VPN, check the settings to make sure the local network feature is turned off
