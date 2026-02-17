@@ -23,7 +23,7 @@
 - Your exam will require you to submit a reflection on both assignments
 - The reflections will be about the use of Figma and how to translate the design there to React Native
 - Each assignment reflection will be 0.5 pages, making it a total of 1 page
-- Tip: keep notes on learnings and challenges when doing the three assignments
+- Tip: keep notes on learnings and challenges when doing the two assignments
 
 ## Practical Information
 
