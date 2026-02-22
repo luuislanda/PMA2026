@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, Button, Alert } from 'react-native';
 
 export default function App() {
   return (
@@ -33,6 +33,17 @@ export default function App() {
           <Text style={styles.boldText}>snow.biker </Text> 
           Here is me, biking through Copenhagen to get to work, what a beautiful day.</Text>
       </View>
+
+      {/*New Button*/}
+
+      <View style={styles.myButton}>
+        <Button 
+          title="Press Me!"
+          color="white" 
+          onPress={() => Alert.alert('Hello!')}
+        />
+      </View>
+
     </View>
   );
 }
@@ -80,5 +91,13 @@ const styles = StyleSheet.create({
   },
   pfp: {
     marginRight: 15,
+  },
+  myButton : {
+    backgroundColor: "blue",
+    width: "50%",
+    alignSelf: "center",
+    marginTop: 20,
+    borderRadius: 50
   }
+  
 });
