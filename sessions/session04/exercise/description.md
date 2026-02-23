@@ -1,5 +1,7 @@
 # Exercise 4
 
+It's recommended you start a new project for each of these exercises
+
 ## Part 1: Control Flow (The "JS Zone")
 ### 1.1: Access Validator
 **Scenario**: Bouncer App. You are coding a bouncer app for a club. The app needs to check a user's age and decide if they are allowed to enter.
