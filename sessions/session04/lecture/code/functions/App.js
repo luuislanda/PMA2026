@@ -27,8 +27,10 @@ export default function App() {
     console.log("Price: " + price);
     console.log("Handled by: " + workerName);
 
+    const messageToWorker = "Order Received: " + dish + " will cost " + price
+
     // This shows up on the phone
-    Alert.alert("Order Received", dish + " will cost " + price);
+    Alert.alert(messageToWorker);
   };
 
   return (
