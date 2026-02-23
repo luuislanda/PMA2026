@@ -7,9 +7,28 @@ export default function App() {
   const pizzaName = "Margherita";
   const burgerName = "Classic";
 
-  // FUNCTION: Our Recipe Machine.
+  // 1. A Function to calculate Price: Calculates a price but doesn't show it on screen yet
+  function getPrice(dish) {
+    if (dish === "Margherita Pizza") {
+      return "85 DKK";
+    } else {
+      return "95 DKK";
+    }
+  }
+
+  // 2. An Action Function: Triggered by the button
   const handleOrder = (dish) => {
-    Alert.alert("Order Received", "The kitchen is now preparing: " + dish);
+    // We call our price function here and save the return on the 'price' variable
+    const price = getPrice(dish);
+
+    // This shows up in your VS Code Terminal, it's for you only
+    console.log("--- New Order Received ---");
+    console.log("Item: " + dish);
+    console.log("Price: " + price);
+    console.log("Handled by: " + workerName);
+
+    // This shows up on the phone
+    Alert.alert("Order Received", dish + " will cost " + price);
   };
 
   return (
@@ -23,14 +42,14 @@ export default function App() {
         <Text style={styles.orderTitle}>Make an Order</Text>
         <Text style={styles.description}>We are currently serving:</Text>
 
-        <Text style={styles.menuItem}>Pizza: {pizzaName}</Text>
-        <Text style={styles.menuItem}>Burger: {burgerName}</Text>
+        <Text style={styles.menuItem}>🍕 {pizzaName}</Text>
+        <Text style={styles.menuItem}>🍔 {burgerName}</Text>
 
         <View style={styles.buttonWrapper}>
           <Button
             title="Order Pizza"
             onPress={() => handleOrder("Margherita Pizza")}
-            color="#2f25b9"
+            color="white"
           />
         </View>
 
@@ -38,7 +57,7 @@ export default function App() {
           <Button
             title="Order Burger"
             onPress={() => handleOrder("Classic Burger")}
-            color="#e67e22"
+            color="white"
           />
         </View>
       </View>
@@ -51,13 +70,14 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#1a1a1a",
     padding: 20,
+    justifyContent: "center"
   },
   titleCard: {
     backgroundColor: "#fff",
     padding: 30,
     borderRadius: 20,
     alignItems: "center",
-    margin: 20,
+    marginBottom: 20,
   },
   orderCard: {
     backgroundColor: "#fff",
@@ -70,12 +90,20 @@ const styles = StyleSheet.create({
   orderTitle: { fontSize: 20, fontWeight: "bold", color: "#d35400" },
   menuItem: {
     marginVertical: 10,
+    fontSize: 16,
+    fontWeight: "600"
   },
   description: {
     textAlign: "center",
     marginTop: 10,
-    color: "#000",
-    fontSize: 15,
+    color: "#666",
+    fontSize: 14,
   },
-  buttonWrapper: { width: "70%", height: 50, borderRadius: 20 },
+  buttonWrapper: { 
+    width: "100%", 
+    marginTop: 15,
+    borderRadius: 10,
+    overflow: "hidden", // Helps rounded corners show on some platforms! In my case it wasnt showing
+    backgroundColor: '#2f25b9'
+  },
 });
