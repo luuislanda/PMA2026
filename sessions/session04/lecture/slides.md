@@ -9,7 +9,7 @@ hideInToc: true
 
 # Session 4: Interactivity and States
 
-Making your prototypes interactible
+Adding interactivity to your prototypes
 
 <div class="abs-br m-6 flex gap-2">
   <a href="https://github.com/luuislanda/PMA2026" target="_blank" alt="GitHub" title="Open in GitHub"
