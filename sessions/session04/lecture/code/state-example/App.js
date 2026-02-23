@@ -8,14 +8,9 @@ export default function App() {
   // State
   const [currentOrder, setCurrentOrder] = useState("No orders yet...");
 
-  // FUNCTION: Includes a timer (setTimeout)
+  // Handler function
   const handleOrder = (dish, emoji) => {
-    setCurrentOrder("Cooking " + dish + " " + emoji + "...");
-
-    // Timer: After 2000ms (2 seconds), it finishes
-    setTimeout(() => {
-      setCurrentOrder("Ready: " + dish + " " + emoji + " ✅");
-    }, 2000);
+    setCurrentOrder("Cooking " + dish + " " + emoji);
   };
 
   return (
@@ -28,6 +23,7 @@ export default function App() {
       <View style={styles.orderCard}>
         <Text style={styles.orderTitle}>Digital Order Board</Text>
         <View style={styles.statusBox}>
+          {/* HERE WE DISPLAY THE ORDER */}
           <Text style={styles.statusText}>{currentOrder}</Text>
         </View>
 
@@ -37,7 +33,7 @@ export default function App() {
           <Button
             title="Order Pizza"
             onPress={() => handleOrder("Margherita", "🍕")}
-            color="#2f25b9"
+            color="white"
           />
         </View>
 
@@ -45,7 +41,7 @@ export default function App() {
           <Button
             title="Order Burger"
             onPress={() => handleOrder("Classic", "🍔")}
-            color="#e67e22"
+            color="white"
           />
         </View>
 
@@ -60,8 +56,6 @@ export default function App() {
   );
 }
 
-// ... styles remain the same as your previous version ...
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -71,10 +65,10 @@ const styles = StyleSheet.create({
   },
   titleCard: {
     backgroundColor: "#fff",
-    padding: 30,
+    padding: 25,
     borderRadius: 20,
     alignItems: "center",
-    margin: 20,
+    marginBottom: 20,
   },
   orderCard: {
     backgroundColor: "#fff",
@@ -82,23 +76,34 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     alignItems: "center",
   },
-  brand: { fontSize: 30, fontWeight: "900", color: "#2f25b9", marginBottom: 5 },
-  staff: { fontSize: 15, color: "#000" },
-  orderTitle: { fontSize: 20, fontWeight: "bold", color: "#d35400" },
+  brand: { 
+    fontSize: 40, // Increased size from previous design
+    fontWeight: "900", 
+    color: "#2f25b9", 
+    marginBottom: 5 
+  },
+  staff: { fontSize: 14, color: "#666" },
+  orderTitle: { 
+    fontSize: 20, 
+    fontWeight: "bold", 
+    color: "#d35400" 
+  },
   statusBox: {
-    backgroundColor: "#f0f0f0",
-    padding: 15,
+    backgroundColor: "#fdf2e9", // Receipt-style background
+    padding: 20,
     borderRadius: 10,
     marginVertical: 15,
     width: "100%",
     alignItems: "center",
-    borderWidth: 1,
-    borderColor: "#ddd",
+    borderWidth: 2,
+    borderColor: "#d35400",
+    borderStyle: "dashed", // Dashed border for the "Board" look
   },
   statusText: {
     fontSize: 18,
     fontWeight: "bold",
-    color: "#2f25b9",
+    color: "#1a1a1a",
+    textAlign: "center",
   },
   description: {
     textAlign: "center",
@@ -106,11 +111,18 @@ const styles = StyleSheet.create({
     color: "#666",
     fontSize: 14,
   },
-  buttonWrapper: { width: "80%", marginBottom: 10 },
+  buttonWrapper: { 
+    width: "100%", 
+    backgroundColor: "#2f25b9", // Wrapped button for consistent rounded corners
+    borderRadius: 10,
+    marginBottom: 10,
+    overflow: "hidden",
+  },
   clearLink: {
     marginTop: 15,
     color: "red",
     textDecorationLine: "underline",
-    fontSize: 14,
+    fontSize: 16,
+    fontWeight: "600",
   },
 });

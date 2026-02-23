@@ -5,4 +5,4 @@ sessions/**/node_modules/
 # Ignores .zip files used to submit to LearnIT
 .zip
 
-.DS_Store
+**/.DS_Store

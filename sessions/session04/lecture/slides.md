@@ -31,15 +31,40 @@ hideInToc: true
 
 
 ---
+layout: center
+---
 
 # Course Announcements
+
+- I will add details on how to share your Figma links to the assignment description
+- Weekly _"sign up for your groups"_ notice
+- How is the assignment going?
+
+
+<style>
+h1 {
+  text-align:center;
+}
+p {
+  text-align:center;
+}
+</style>
 
 ---
 layout: center
 ---
 
-Sceneario: Today we are will build the software for our brand new pizzeria/burger place we opened.
+Sceneario: Today we will build the software for our brand new pizzeria/burger place we opened.
 
+
+<style>
+h1 {
+  text-align:center;
+}
+p {
+  text-align:center;
+}
+</style>
 
 ---
 
@@ -48,12 +73,12 @@ Sceneario: Today we are will build the software for our brand new pizzeria/burge
 A variable is a **container** for data. And like every container in an ordered space, it should have a name tag so you know what it contains.
 
 In JavaScript you have two options to **declare** variables, you can use `const` or `let`.
-
-| **Type of variable**          | **Analogy**                            | **The Rule**                                   |
-|-------------------------------|----------------------------------------|--------------------------------------------|
-| `const` | The table | You cannot change this value later.        |
-| `let`              | The Pencil. You can erase and rewrite. | You can change this value as the app runs. |
  
+| Type of variable | Analogy           | The Rule                                                                           |                            |               |
+|------------------|-------------------|------------------------------------------------------------------------------------|----------------------------|---------------|
+| `const`            | The Menu Item.    | "A ""Margherita Pizza"" is always a "Margherita Pizza." You don't change its name. |                            |               |
+| `let`              | The Status of an Order. | "It starts as "Ordered"                                                              " then changes to "Cooking"   then "Ready". |
+
 
 If you have seen any online tutorials, or code written where they use `var`, you should know that these days `var` is not used!
 
@@ -95,13 +120,26 @@ This is for different reasons, but it's important for you to know that this is t
 Rule of thumb for you: If in doubt, start using `const`. If the computer gave you an error because you tried to change the value, use `let`
 
 
+<style>
+h1 {
+  text-align:center;
+}
+p {
+  text-align:center;
+}
+</style>
+
+
 ---
 level: 2
 hideInToc: true
-layout: image-right
+layout: two-cols-header
 ---
 
 ## When to use `const` or `let`?
+
+::left::
+
 ### Example:
 
 Let's look at the DMI app, and focus on the top most visual part of the app:
@@ -122,6 +160,23 @@ const cityName = "Amagerbro";
 let temperature = 1;
 let weather = "Rainy";
 ```
+
+::right::
+
+Example 1
+
+<img src=./assets/imgs/var-ex1.jpg width=300>
+
+Example 2
+
+<img src=./assets/imgs/var-ex2.jpg width=300>
+
+
+<style>
+.two-cols-header {
+  column-gap: 40px; /* Adjust the gap size as needed */
+}
+</style>
 
 ---
 hideInToc: true
@@ -175,11 +230,13 @@ export default function App() {
 
 ---
 hideInToc: true
+layout: center
+zoom: 1.2
 ---
 
 ### Things to consider for variables and functions in RN
 
-- Define your variables before the `return` part of the functional part of the code
+- **Define** your variables in the "JS zone", this is considered best practice.
 - Remember that giving them good names can save you some headaches down the road
 - It's good practice to use `camelCase` when naming variables and functions
 - To call variables or functions inside our RN code, consider the following:
@@ -187,10 +244,13 @@ hideInToc: true
   - Are you in the "JSX/RN zone"?, wrap them in `{}`!
 
 
+
 ---
 level: 2
 hideInToc: true
 layout: image-right
+image: ./assets/imgs/var-RN-ex.png
+backgroundSize: 50%
 ---
 
 ## When to use `const` or `let`?
@@ -255,12 +315,12 @@ hideInToc: true
 ### Step 1: Defining a Function
 
 1. To define a function, you first write:
-  - `function sayHello() {}`
+    - `function sayHello() {}`
 2. Then then you can fill in the following:
-  - parameters go inside the `()`
-  - the logic of the function goes in the `{}`
+    - parameters go inside the `()`
+    - the logic of the function goes in the `{}`
 3. Finally define the return, or what will the end result be
-  - To do so, you add `return` and then the final variable of what will be returned
+    - To do so, you add `return` and then the final variable of what will be returned
 
 
 ::right::
@@ -297,12 +357,12 @@ hideInToc: true
 ### Step 2: Calling your function
 
 1. Once your function is ready to be used, we need to call it.
-  - If you don't do it, your function will not actually _do_ anything
+    - If you don't do it, your function will not actually _do_ anything
 2. To call your function, just write the name you gave it
-  - If it needs any parameters, make sure to include the variable you want to give in inside the `()`
+    - If it needs any parameters, make sure to include the variable you want to give in inside the `()`
 3. Finally think about what you want to do with the result
-  - Will you just print it out?
-  - Will you use it for other recipes/functions?
+    - Will you just print it out?
+    - Will you use it for other recipes/functions?
 
 ::right::
 
@@ -385,10 +445,6 @@ hideInToc: true
 
 
 ---
-
-## Example Coffee Machine - JavaScript
-
----
 hideInToc: true
 ---
 
@@ -400,20 +456,7 @@ They behave the same as in JS. Here is some advice:
 - When _calling_ a function inside the "JSX/RN Zone", wrap it in `{}`
   - If you are _calling_ a function inside the "JS Zone" you don't need to do this
 - Remember that **most of the time** the output of your function will either be: a <u>**return**</u>, or an <u>**action**</u>.
-- When passing data to a `prop`, use the `() => myFunction("Data")`
-  - More on this very soon :)
 
----
-layout: image-right
----
-
-## Example: Functions in RN
-
-Let's go to VSCode and do some live coding.
-
-We'll start a new project, but you can also replace the contents of the `App.js` file with the ones of the functions example
-
-On LearnIT, this is the code inside the _"functions-example"_ folder.
 
 ---
 
@@ -472,9 +515,21 @@ It is considered best practice to do all the logic for conditionals in the "JS Z
 
 In the "JSX Zone", we have a different syntax! 
 
+```js
+<Text>
+  {cups > 8 
+    ? "Too many cups! Max is 8" 
+    : "☕ Brewing " + cups + " cups of coffee..."
+  }
+</Text>
+```
+
 However, since it's not best practice, we usually only execute the result of the logic that is in the JS Zone.
 
 ---
+hideInToc: true
+---
+
 
 ## Example React Native: Best Practices
 
@@ -503,6 +558,8 @@ export default function CoffeeApp() {
 ```
 
 ---
+hideInToc: true
+---
 
 ## Example React Native JSX Zone only
 
@@ -527,6 +584,7 @@ export default function CoffeeApp() {
 
 ---
 layout: two-cols-header
+hideInToc: true
 ---
 
 ## Side by side comparison
@@ -587,11 +645,22 @@ export default function CoffeeApp() {
 }
 </style>
 
+
+
+---
+layout: image-right
+image: ./assets/imgs/func-RN-ex.png
+backgroundSize: 50%
+hideInToc: true
 ---
 
-## Example in RN: Live
+## Example: Functions in RN
 
-Let's go to VSCode and add a condition to our restaurant app
+Let's go to VSCode and do some live coding.
+
+We'll start a new project, but you can also replace the contents of the `App.js` file with the ones of the functions example
+
+On LearnIT, this is the code inside the _"functions-example"_ folder.
 
 ---
 hideInToc: true
@@ -618,13 +687,18 @@ backgroundSize: 90%
     - Perform an action
 
 
+---
+layout: center
+---
+
+## Function and Control Flow Syntax
 
 
 ---
 level: 2
+hideInToc: true
 ---
 
-## Function and Control Flow Syntax
 
 ### `() =>` a.k.a. The Arrow Function
 
@@ -643,6 +717,8 @@ We know that `onPress` is a prop that expects a function. Here is why it's writt
 - If you had written: `onPress={Alert.alert('Hi')}` without the `() =>` the Alert would appear the moment the app opened.
   - For the curious: This is because here we are passing the _result_ of the function, instead of a _function itself_
 
+---
+hideInToc: true
 ---
 
 ### `() =>` a.k.a. The Arrow Function
@@ -668,6 +744,8 @@ You will use them a lot when defining _handling_ functions.
 
 
 ---
+hideInToc: true
+---
 
 # How React Native "Watches" Your Code
 
@@ -688,15 +766,64 @@ As you saw last week, `<Button />` is quite simple and hard to style.
 
 `<Pressable>` is much more flexible, you can treat it like a `<View>` for adding interaction to the different elements in your prototype.
 
+Since `<Pressable>` is more like a view, all of its children, will be pressable
+
+It's flexibility allows us to give interactions to many things like Images, Text, Icons, etc.
+
+If there's time we'll do a live demo, otherwise, there is a `pressable-example` folder inside the zip file uploaded to LearnIT.
 
 ---
+hideInToc: true
+---
 
+## `<Pressable>` props and tips
+
+0. Remember to import it!
+1. Pressable is **NOT** self-closing. Meaning it can have children
+
+| Prop        | Purpose                                             | Requirement | Expects                |
+|-------------|-----------------------------------------------------|-------------|------------------------|
+| onPress     | Called immediately when the user taps the element.  | Required    | Function: () => {}     |
+| style       | Controls layout and visuals (just like a View).     | Optional    | Object: styles.name    |
+| onLongPress | Triggers logic if the user holds the press.         | Optional    | Function               |
+
+---
+hideInToc: true
+---
+
+```js
+export default function App() {
+  return (
+    <View style={styles.container}>
+      {/* Example 1: Pressable Image */}
+      <Pressable 
+        onPress={() => Alert.alert("You clicked the Image!")}
+      >
+        <Image 
+          source={{ uri: 'https://picsum.photos/200' }} 
+          style={styles.image} 
+        />
+      </Pressable>
+      {/* Example 2: Pressable "Button" */}
+      <Pressable 
+        style={styles.button} 
+        onPress={() => Alert.alert("You clicked the Box!")}
+      >
+        <Text style={styles.buttonText}>Click the Box</Text>
+      </Pressable>
+      {/* Example 3: Pressable Text */}
+      <Pressable onPress={() => Alert.alert("You clicked the Text!")}>
+        <Text style={styles.simpleText}>Click this plain text</Text>
+      </Pressable>
+    </View>
+  );
+}
+```
 
 
 ---
 
 # `useState`
-
 
 - `useState` is a special function that gives your app a 'memory' and signals the screen to re-paint whenever you use the _setter_ function.
 
@@ -715,6 +842,27 @@ const [state, setState] = useState(initialState)
       - This function will be used by you in your own **handling** functions.
 
 - It does not require any parameters, but it is highly recommended to give it the `initialState` or at least an empty string `""`
+
+
+---
+hideInToc: true
+---
+
+## Step by Step using `useState`
+
+0. Import it at the top using
+
+```js
+import { useState } from "react";
+```
+
+1. In the JS Zone. Define `useState` by assigning it's two returns to variables wrapped in `[]`. Also add an initial value after the `()`
+
+```js
+const [currentOrder, setCurrentOrder] = useState("No orders yet...");
+```
+
+Let's do a quick demo!
 
 
 ---
@@ -737,11 +885,12 @@ const [currentOrder, setCurrentOrder] = useState("No orders yet...");
 
 ```js
 const handleOrder = (dish, emoji) => {
-  // Logic lives here!
   setCurrentOrder("Cooking " + dish + " " + emoji); 
 };
 ```
 
+---
+hideInToc: true
 ---
 
 # Example
@@ -763,6 +912,8 @@ export default function App() {
 ```
 
 ---
+hideInToc: true
+---
 
 ## Anatomy of a Handling Function
 
@@ -772,26 +923,96 @@ const handleOrder = (dish, emoji) => {
 };
 ```
 
-`const`: Keeps our recipe safe from being changed elsewhere.
+`const`: Ensures the result is not changed elsewhere
 
-`handleOrder`: The name you give the recipe (usually starts with "handle").
+`handleOrder`: The name you give the handling function.
 
-`(dish, emoji)`: The Parameters. These are empty slots waiting for labels (like "Pizza" and "🍕") from the button.
+`(dish, emoji)`: The Parameters of the function.
 
-`=>`: The Arrow. It points from the ingredients to the action.
+`=>`: The Arrow. The short way to write the function
 
-`{ }`: The Body. This is the kitchen where the work happens.
-
-`The Action`: For now, we are just using an Alert. Soon, we will swap this for a tool provides more flexibility for interactions.
-
+`The Action`: We call the **setter** function, to change the status and change the screen.
 
 ---
 
-| Step           | React / JS Name | The Action in PizzBurg                                                        | Analogy                                                          |                                                           |
-|----------------|-----------------|-------------------------------------------------------------------------------|------------------------------------------------------------------|-----------------------------------------------------------|
-| 1. The Memory  | `useState`        | Creating the digital order |  Sends order to kitchen |
-| 2. The Trigger | `onPress`         | The user taps the ""Order Pizza"" button.                                     | The worker placing the order at the counter.                   |                                                           |
-| 3. The Logic   | `handleOrder`     | The function that decides to show ""Cooking..."" and starts a 2-second timer. |  |                                                           |
-| 4. The Update  | `setCurrentOrder` | Using the setter function to change the text to ""Ready! ✅""                       | The push that changes the text on the screen  |                                                           |
+## Doing resets
+
+After changing the state, sometimes you will want to go back to the _default_ state. For that, you can:
+
+Write another handling function
+
+```js
+const clearBoard = () => {
+    setCurrentOrder("No orders yet...");
+  };
+```
+
+or directly activating the setter function
+
+```js
+<Button
+  onPress={() => setCurrentOrder("No orders yet...")}
+/>
+```
+
+In this case it's really a matter of preference/elegance. The best practices is to have a handlerfunction, but IMO sometimes it's unnecessary for just resetting the state
+
+---
+layout: center
+---
+
+# Live Code
+
+On LearnIT, the code is in the folder _"state-example"_
 
 
+<style>
+h1 {
+  text-align:center;
+}
+
+</style>
+
+---
+layout: center
+---
+
+# Next Week
+
+Next week we will take a break from coding, and look at accesibility for React Native.
+
+We'll talk about design, adding accesibility tags to our code/projects, and more generally about digital accesibility.
+
+We will come back to State throughout the course, but we wont add any more complexity!
+
+
+<style>
+h1 {
+  text-align:center;
+}
+
+</style>
+
+---
+layout: center
+---
+
+
+# Exercise 4
+
+- For the exercises today, you will have a few chances to practice:
+  - Conditionals
+  - Functions
+  - State, setterFunctions and Pressable
+
+- You can use the rest of the time to finish your Assignment #1
+
+
+<style>
+h1 {
+  text-align:center;
+}
+p {
+  text-align:center;
+}
+</style>
