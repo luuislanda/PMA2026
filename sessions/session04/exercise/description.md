@@ -135,12 +135,15 @@ const styles = StyleSheet.create({
 
 
 ### 3.3: Toggle Boolean with Conditional Styling
+
+PS: I know I said you shouldn't use conditional syntax in JSX/RN Zone, but it's good to practice it nonetheless!
+
 Scenario: Security System. You are building the dashboard for a home alarm system. It needs a clear visual indicator of whether the alarm is active or inactive.
 
 Instructions:
-- Create a boolean state isActive (true/false).
+- Create a state isActive that takes in true or false values (Also known as Boolean).
 - Create a function to toggle the state (set it to the opposite of its current value).
-- Use a Ternary Operator in the style prop of your main <View> to change the background color (e.g., green when active, red when inactive).
+- Use a if/else syntax in the JSX/RN Zone for the style prop of your main <View> to change the background color (e.g., green when active, red when inactive).
 
 Expected Result: Tapping the button flips the entire screen color between red and green and changes the status text.
 
@@ -159,11 +162,11 @@ export default function App() {
   };
 
   return (
-    // 3. Use a ternary operator in the style array to change backgroundColor
+    // 3. Use a ? : operator in the style array to change backgroundColor
     <View style={[styles.container, { backgroundColor: 'gray' }]}>
       
       <Text style={styles.statusText}>
-        {/* 4. Use a ternary here to show "ALARM ACTIVE" or "ALARM INACTIVE" */}
+        {/* 4. Use a ? : here to show "ALARM ACTIVE" or "ALARM INACTIVE" */}
         Status
       </Text>
 
