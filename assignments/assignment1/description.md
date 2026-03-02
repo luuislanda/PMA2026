@@ -43,7 +43,7 @@ Each student must submit a `.zip` file containing a folder with the files of the
 
 If you are unsure of how to make a `.zip` file, or your `.zip` file is taking too long to be made/uploaded. Please follow the <u>**[file submission guide](https://github.com/luuislanda/PMA2026/tree/main/guides/submission-guide)**</u>
 
-To obtain a link to your figma design, you can follow the guide [here: ](https://help.figma.com/hc/en-us/articles/360040531773-Share-files-and-prototypes)
+To obtain a link to your figma design, you can follow the guide [here. Check the Share via Link header ](https://help.figma.com/hc/en-us/articles/360040531773-Share-files-and-prototypes)
 
 
 ### File Submission Checklist
