@@ -203,6 +203,7 @@ For your prototypes, I recommend focusing on the following:
 layout: image-right
 image: https://media.geeksforgeeks.org/wp-content/uploads/20250708173723170760/push232.webp
 backgroundSize: 100%
+hideInToc: true
 ---
 
 ## Stack Navigation
@@ -216,6 +217,7 @@ detailed views and then retrace their steps when done.
 
 ---
 layout: two-cols-header
+hideInToc: true
 ---
 
 ::left::
@@ -262,6 +264,7 @@ h2 {
 
 ---
 layout: center
+hideInToc: true
 ---
 
 ## Planning the application
@@ -374,6 +377,11 @@ zoom: 0.95
 
 # Navigation Components
 
+
+---
+hideInToc: true
+---
+
 ## `<Navigator>`
 
 Initialises the Navigation you will use. 
@@ -410,7 +418,8 @@ Navigator
 
 
 ---
-
+hideInToc: true
+---
 
 ## `<Tab.Screen>`
 
