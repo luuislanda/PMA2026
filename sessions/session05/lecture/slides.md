@@ -327,12 +327,21 @@ zoom: 0.95
 ---
 layout: center
 hideInToc: true
-zoom: 1.6
+zoom: 1.3
 ---
 
-<Youtube id="EEpsoCPL518" />
+Showcase of assistive technologies
+
 
 [Link here](https://www.youtube.com/watch?v=EEpsoCPL518)
+
+<br>
+<br>
+
+A more creative showcase 
+
+[Link here](https://www.youtube.com/watch?v=tfe479qL8hg)
+
 
 <style>
   p {
@@ -467,4 +476,4 @@ p {
 - And we'll take a look at the following new things:
   - `<TextInput>` so you can add text to your prototypes
   - Navigation, to connect multiple screens
-
+ns
