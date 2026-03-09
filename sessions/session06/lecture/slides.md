@@ -292,6 +292,16 @@ hideInToc: true
 
 ### Installing packages
 
+After we initialise a project, we need to run the following commands to install in the terminal. This will install the packages needed for navigation:
+
+`npm install @react-navigation/native`
+
+`npx expo install react-native-screens react-native-safe-area-context`
+
+`npm install @react-navigation/native-stack`
+
+`npm install @react-navigation/bottom-tabs`
+
 ---
 layout: center
 ---
@@ -299,6 +309,133 @@ layout: center
 Let's make two screens and see how far we get before the break!
 
 You can find the code already in LearnIT, it may differ a bit as always :)
+
+---
+
+What I did:
+
+1. Made the screens as you are used to in the `App.js` file, once they were completed I moved to a new folder inside my project called "screens"
+    - I renamed them `HomeScreen.js` and `ProfileScreen.js`
+2. I changed the name of the function within each of the screens, to match their filename
+3. I deleted all of App.js and imported the navigation packages
+4. I imported our screens
+
+```js
+import HomeScreen from './screens/HomeScreen';
+import ProfileScreen from './screens/ProfileScreen';
+```
+
+5. I initialised a `BottomTabNavigator`
+
+```js
+const Tab = createBottomTabNavigator();
+```
+
+6. In the return block, I created a `<NavigationContainer>`
+
+---
+zoom: 0.95
+---
+
+7. Added a `<TabNavigator >` and configured it's look:
+
+```js
+<Tab.Navigator
+        initialRouteName="Home"
+        screenOptions={{
+          headerShown: false,
+          tabBarActiveTintColor: '#B3541E',
+          tabBarInactiveTintColor: '#5A5A5A',
+          tabBarStyle: {
+                backgroundColor: '#F7F3EB',       // Clean, high contrast
+              },
+          tabBarLabelStyle: { fontSize: 12 },
+        }}
+      >
+```
+
+8. Added a `<Tab.Screen />` for each of my static screens
+
+```js
+<Tab.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{
+            title: 'Home',
+            tabBarAccessibilityLabel: 'Home tab',
+            tabBarIcon: () => <Text style={{ fontSize: 22 }}>🏠</Text>,
+          }}
+        />
+```
+
+9. Closed the containers
+
+---
+
+# Navigation Components
+
+## `<Navigator>`
+
+Initialises the Navigation you will use. 
+
+We initialised as:
+
+```js
+const Tab = createBottomTabNavigator();
+```
+
+The variable `Tab` then is used when naming the components. 
+
+For example:
+
+`<Tab.Navigator>` and `<Tab.Screen>` all start with `Tab`
+
+---
+zoom: 0.8
+---
+
+Navigator
+
+| Property                | Description                                                                                      | Expected Value                   |
+|-------------------------|--------------------------------------------------------------------------------------------------|----------------------------------|
+| initialRouteName        | Determines which screen the app displays first when it loads.                                    | String (matches a name prop)     |
+| screenOptions           | A configuration object that applies styles and behaviors to all screens in the navigator.        | Object                           |
+| headerShown             | Toggles the visibility of the default navigation title bar at the top of the screen.             | Boolean (true or false)          |
+| tabBarActiveTintColor   | Sets the color of the icon and text for the tab that is currently selected.                      | String (Hex, RGB, or color name) |
+| tabBarInactiveTintColor | Sets the color of the icons and text for all tabs that are not currently selected.               | String (Hex, RGB, or color name) |
+| tabBarStyle             | An object used to style the physical "bar" at the bottom (e.g. background color height shadows). | Object (StyleSheet)              |
+| tabBarLabelStyle        | Specifically targets the text labels under the icons to change size, font, or weight.            | Object (StyleSheet)              |
+
+
+
+
+---
+
+
+## `<Tab.Screen>`
+
+Think of it as a "registration" for a single page in your app. It tells the navigation system  main things:
+
+1. Which React component (like HomeScreen) should appear when this tab is selected.
+
+2. How to look: What the tab button at the bottom of the screen should look like (its icon, label, and accessibility settings).
+
+---
+zoom: 0.85
+---
+
+`<Screen>`
+
+| Property                         | What it does                                                                                  | Data Type |
+|----------------------------------|-----------------------------------------------------------------------------------------------|-----------|
+| name                             | The unique internal identifier for the screen. Used for navigation.navigate('Name').          | String    |
+| component                        | Used for static screens. Links a component directly without passing custom props.             | Component |
+| children                         | Used for dynamic screens. An arrow function `() =>` that allows you to ""inject"" props like catName. | Function  |
+| options                          | An object containing all the visual and accessibility settings for the tab.                   | Object    |
+| options.title                    | The visible text label displayed to the user under the icon.                                  | String    |
+| options.tabBarIcon               | Returns the graphic (emoji, SVG, or Image) representing the tab.                              | Function  |
+| options.tabBarAccessibilityLabel | The text read by screen readers (VoiceOver/TalkBack) to identify the tab.                     | String    |
+
 
 
 
@@ -383,6 +520,26 @@ In this example:
 # Live Coding
 
 Let's take the static we made and add a interactive component to it via `<TextInput>`
+
+---
+hideInToc: true
+---
+
+What I did in the live code:
+
+1. Moved all `useState` logic to the `App.js` file
+2. Ensured that each screen, receives the parameters they need in their function definition
+3. Changed the `<Tab.Screen/>`.
+    - First it stopped a self closing tab.
+    - Deleted the `component` prop
+    - Instead, I added the folllwing an arrow function, this allows it to share data
+
+```js
+{() => <HomeScreen catName={catName}/>}
+```
+
+4. Make sure the props we are passing are set correctly in our dynamic elements. In this case, made sure `<TextInput>`'s props are set to the relevant set in `App.js` variables
+
 
 
 ---
