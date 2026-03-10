@@ -55,7 +55,7 @@ Steps:
 In `App.js`, pass values as props to the `HomeScreen`:
 
 ```js
-<HomeScreen catName={catName} userName={userName} catWeight={catWeight}
+<HomeScreen catName={catName} userName={userName} catWeight={catWeight}/>
 ```
 
 In `HomeScreen.js`, display the values for `userName` and `catWeight`.
