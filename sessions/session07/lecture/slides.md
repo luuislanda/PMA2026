@@ -7,9 +7,9 @@ mdc: true
 hideInToc: true
 ---
 
-# Session 7: Stack Navigation, and Custom Components
+# Session 7: Stack Navigation, useNavigation and (maybe) Custom Components
 
-Adding stack navigation to your prototype, making a custom component, and Assignment #2
+Assignment #2, adding stack navigation to your prototype, and if we have time revisiting custom components
 
 <div class="abs-br m-6 flex gap-2">
   <a href="https://github.com/luuislanda/PMA2026" target="_blank" alt="GitHub" title="Open in GitHub"
@@ -123,7 +123,15 @@ layout: center
 ---
 
 
-I want add screen where all the feedings appear to my Home screen. Because I want it to be part of my Home screen, I need to use `StackNavigation`. 
+I want add screen where all the feedings appear to my Home screen. 
+
+Because I want it to be part of my Home screen, I need to use `StackNavigation`. 
+
+<style>
+  p {
+    text-align: center;
+  }
+</style>
 
 
 ---
@@ -132,7 +140,7 @@ image: https://media.geeksforgeeks.org/wp-content/uploads/20250708173723170760/p
 backgroundSize: 120%
 ---
 
-# Stack Navigation
+# Planning Stack Navigation
 
 - The `NativeStackNavigator` is initialised inside the `App.js` file
 - Though it is initialised there, the screens inside the `NativeStack`can only be acceses within the base screen
@@ -141,18 +149,54 @@ backgroundSize: 120%
 
 
 ---
+hideInToc: true
+layout: center
 
-# Stack Navigation
+---
+
+# Planning Stack Navigation
 
 In our case, our _stack_ for the Home screen will look like this:
 
 
+<style>
+  h1 {
+    text-align: center
+  }
+</style>
 
 ---
 layout: center
 ---
 
-Like last time, let's begin by first planning and coding the new screen. 
+And our full app **navigation** will look like this:
+
+```mermaid
+flowchart TD
+  B[Tab.Navigator]
+
+  B --> C[Tab: HomeStack]
+  B --> D[Tab: Feed]
+  B --> E[Tab: Profile]
+
+  C --> G[HomeStack: HomeScreen]
+  G --> H[History: HistoryScreen]
+```
+
+---
+layout: center
+---
+
+Now let's quickly sketch our screen. 
+
+I will use the board but you are welcome to use Figma or any tool to do it
+
+<style>
+  p {
+    text-align: center
+  }
+</style>
+
 
 ---
 layout: image-right
@@ -163,14 +207,15 @@ backgroundSize: 50%
 
 # `<ScrollView>`
 
-To showcase the history of the times the cat was fed, we will need something that can be scrolled. For this we can use the `<ScrollView>` component.
+To showcase the history of the times the cat was fed, we will need something that can be scrolled. 
+
+For this we can use the `<ScrollView>` component.
 
 Like the name implies, `<ScrollView>` functions exactly the same as a `<View>` but adding the ability to scroll.
 
 It is good for <u>**prototypes**</u> and for when you want to showcase a non-huge number of data/options.  
 
-Let's see how to use it!
-
+Let's use it for the screen we just made
 
 
 ---
@@ -199,8 +244,59 @@ backgroundSize: 50%
 layout: center
 ---
 
-Break, see you in 15 minutes :)
+Break, see you in 15 minutes
 
+---
+layout: center
+hideInToc: true
+---
+
+
+# Installing the NativeStackNavigator
+
+We also have to install a package to use StackNavigation. The complete set of commands is:
+
+`npm install @react-navigation/native`
+
+`npx expo install react-native-screens react-native-safe-area-context`
+
+`npm install @react-navigation/native-stack`
+
+`npm install @react-navigation/bottom-tabs`
+
+<style>
+  h1 {
+    text-align: center
+  }
+</style>
+
+---
+layout: image-right
+image: https://oss.callstack.com/react-native-paper/screenshots/react-navigation-appBar2.gif
+backgroundSize: 50%
+zoom: 0.95
+---
+
+
+# Implementing Stack Navigation
+
+Stack navigation exists _within_ screens, what we do is turning those single screens into stacks with as many screens as we want
+
+Similar to the `BottomTabNavigator` we first initialise our stack as a variable in our `App.js` file
+
+```js
+const HomeStack = createNativeStackNavigator();
+```
+
+Then, to make it easier to edit and to organise multiple stacks, we wrap the logic of our stack into a **function**
+
+```js
+function HomeStackScreen() {
+  return (
+    // logic goes here
+  )
+
+```
 
 ---
 
@@ -209,7 +305,7 @@ And this is what the code will look like for our home stack (as a static page)
 ```js {1|3|5,22|6,12|6-10|12-21|all}
 const HomeStack = createNativeStackNavigator();
 
-function HomeStackScreen() {
+function HomeStackScreen() { //remember the function name for the next slide ;)
   return (
     <HomeStack.Navigator>
       <HomeStack.Screen
@@ -236,7 +332,7 @@ function HomeStackScreen() {
 
 Once the `HomeStack` function is made, we can now pass it to the `BottomTabNavigator` and tell it to render the stack of screens instead of a single screen.
 
-```js
+```js {all|8}
 export default function App() {
 
   return (
@@ -264,12 +360,465 @@ export default function App() {
 ```
 
 ---
+layout: image-left
+image: https://64.media.tumblr.com/c096d6aa254f5f6e439ea43d515868b0/tumblr_p0etyvS8ZI1sq42p4o1_1280.png
+backgroundSize: 50%
+---
+
+The example above is mainly to show you that a `Stack` is used in the same way a `Screen` is used. 
+
+You can think of the `HomeStackScreen` function as two kids in one big trenchcoat. 
+
+Once we want the screens to share data, things will look a bit different.
+
+Let's make our screens share data now, and see how it changes
+
+---
+
+# `useNavigation`
+
+The `useNavigation` function allows us to give any of our interactive components **inside our screens** the ability to navigate to _anywhere_ in the app.
+
+> It's like a navigation app. Depending on your location, it can tell you how to navigate to where you want to.
+
+It's a very useful tool to add extra navigation prompts/options to the user depending on the context.
+
+As it is meant for Screens, we add it to the screen `.js` file <u>**NOT**</u> the `App.js` file
+
+To use it, we first import it, in this case I import it to my `HomeScreen.js` file:
+
+```js
+import { useNavigation } from '@react-navigation/native';
+```
+
+Then you initialise it:
+
+```js
+  const navigation = useNavigation();
+```
+
+And now it's ready to be used!
+
+---
+
+Remember is that `useNavigation` depends on where you are! For example
+
+### `useNavigation` from HomeScreen -> Profile
+
+This is an example of from a main screen to another main screen
+
+```js
+<TouchableOpacity
+  style={styles.historyButton}
+  onPress={() => navigation.navigate('Profile')}
+>
+  <Text style={styles.historyButtonText}>View Profile</Text>
+</TouchableOpacity>
+```
+
+---
+
+
+### `useNavigation` from HomeScreen -> History
+
+This is an example of a navigation within a stack.
+
+In this case from the main screen "Home" to the sub-screen "History"
+
+
+```js
+<TouchableOpacity
+  style={styles.historyButton}
+  onPress={() => navigation.navigate('History')}
+>
+  <Text style={styles.historyButtonText}>View Feeding History</Text>
+</TouchableOpacity>
+```
+
+---
+
+When navigating from a "main" screen to another screen that is inside a stack, we need to pass a slightly different syntax
+
+### `useNavigation` from FeedScreen -> History
+
+```js {all|4}
+<TouchableOpacity 
+  style={styles.saveButton}
+  onPress={() => navigation.navigate('Home', {screen: "History"})} >
+  <Text style={styles.saveButtonText}>See the History</Text>
+</TouchableOpacity>
+```
+
+---
 layout: center
 ---
 
-Now this will look different when we add dynamic elements, and when we want variables to be shared across screens
+Now let's code this
 
-But the example above is mainly to show you that a `Stack` is used in the same way a `Screen` is used. Think of it as a slightly more complicated screen.
+<!-- Here I showcase how to share variables, without the button to save them all! Instead they are directly fed to the screen-->
 
 
+---
+layout: two-cols-header
+zoom: 0.92
+---
+
+::left::
+
+Static (no sharing of variables)
+
+```js
+function HomeStackScreen() {
+  return (
+    <HomeStack.Navigator>
+      <HomeStack.Screen
+        name="HomeMain"
+        component={HomeScreen}
+        options={{ title: 'Home', headerShown: false }}
+      />
+
+      <HomeStack.Screen
+        name="History"
+        component={HistoryScreen}
+        options={{ 
+          title: 'Feeding History', 
+          headerShown: true, 
+          presentation: "modal", 
+          animation: "slide_from_bottom"
+        }}
+      />
+    </HomeStack.Navigator>
+  );
+}
+```
+
+::right::
+
+Dynamic (sharing of variables)
+
+```js
+function HomeStackScreen({ catName, personName, amountInGrams, feedNotes }) {
+  return (
+    <HomeStack.Navigator>
+      <HomeStack.Screen
+        name="HomeMain"
+        options={{ title: 'Home', headerShown: false }}
+      >
+        {() => (
+          <HomeScreen
+            catName={catName}
+          />
+        )}
+      </HomeStack.Screen>
+
+      <HomeStack.Screen
+        name="History"
+        options={{ title: 'Feeding History', headerShown: true, }}
+      >
+        {() => <HistoryScreen 
+        personName={personName} 
+        amountInGrams={amountInGrams} 
+        feedNotes={feedNotes} 
+        /> }
+      </HomeStack.Screen>
+    </HomeStack.Navigator>
+  );
+}
+```
+
+
+<style>
+p {
+  font-size: 8pt;
+  margin: -5px;
+}
+
+.two-cols-header {
+  column-gap: 20px; 
+}
+</style>
+
+
+---
+layout: center
+---
+
+If you followed up till here, amazing and well done! We achieved our objective for the day
+
+
+---
+layout: image-right
+image: https://static.wixstatic.com/media/5d7aa2_219e32c6f3724c3d8565c5bab493d895~mv2.jpg
+backgroundSize: 90%
+---
+
+# Next Week
+
+- Next week is our mid point for the course and it's an **important** class!
+- We will first finish the code of of today and finally showcase custom components
+- Then we'll do a re-cap of how everything fits so far
+- Then, we will do a "alignment" of our expectations for:
+  - The exam
+  - The rest of the semester
+
+
+---
+hideInToc: true
+---
+
+# Alignment of expectations for the exam
+
+What do I mean by this?
+
+I will show the draft of the exam brief, containing:
+
+- The technical requirements for the exam
+- The design requirements for the exam
+- The accesibility requirments for the exam
+- The description of the written reports
+
+I will explain why the exam has that shape, then, you get a chance to voice any concerns or doubts you might have.
+
+We will discuss it with everyone, trying to align as much as we can what we saw in class, the legal requirements set by the ILOs, and your grasp on many of these topics.
+
+
+
+
+---
+hideInToc: true
+---
+
+# Alignment of expectations for the rest of the semester
+
+Except for one session where we will look at App Onboarding, the rest of the semester's classes will not show anything "new" or add anything to the requirements of the Exam.
+
+I will present to you the plan for the rest of the classes,you can already see it in LearnIT ;)
+
+We will do another Menti to see what you would like to do/see/re-cap during these lessons. Some examples of what we will/could see:
+
+- Planning the development of a mobile application (Session 10)
+- Using 'AI' to program mobile applications (Session 11)
+- Figma clickable prototypes
+- How to showcase your prototype in your portfolio
+- Next steps: How should I continue if programming mobile applications interests me?
+- Re-cap of anything related to React Native
+
+
+
+
+---
+
+# Exercises Session 7
+
+
+
+
+---
+layout: center
+---
+
+# If we have time...
+
+---
+layout: two-cols-header
+level: 2
+---
+
+# Dealing with more than one datapoint: Data Structures Re-cap
+ 
+### Objects
+
+So our prototype currently can handle only one of these entries.
+
+To expand it so it can handle many, we need to take a look back at the data structures we saw last week.
+
+Remember that _Objects_ are very good for showing _key-Value_ pairs, if we use it to structure our data we could endup with an object like this:
+
+::left::
+
+Directly with data:
+
+```js
+const feedEntry = {
+      personName: "Luis",
+      amount: 50,
+      notes: "A few meows here and there",
+    }
+```
+
+::right::
+
+Using the variables in the code:
+
+
+```js
+const feedEntry = {
+      personName: personName,
+      amount: amountInGrams,
+      notes: notes,
+    }
+```
+
+<style>
+.two-cols-header {
+  column-gap: 20px; 
+}
+</style>
+
+
+---
+layout: two-cols-header
+level: 2
+---
+
+### Arrays
+
+Also remember that _Arrays_ are good for showcasing data when the order of the data matters.
+
+So we can organise our feedEntries into an _Array_ that we want to look like this:
+
+::left::
+
+With the data
+
+```js
+const feedEntriesList = [
+  {
+    personName: "Luis",
+    amount: 50,
+    notes: "A few meows here and there",
+  },
+  {
+    personName: "Luis",
+    amount: 20,
+    notes: "Treat after playing",
+  }
+]
+```
+
+
+::right::
+
+With variables
+
+```js
+const feedEntriesList = [
+  feedEntry, //let's call this one feedEntry 1
+  feedEntry, //and this one FeedEntry 2
+]
+```
+
+<style>
+.two-cols-header {
+  column-gap: 20px; /* Adjust the gap size as needed */
+}
+</style>
+
+
+---
+layout: center
+level: 2
+
+---
+
+However, we have a little problem. `FeedEntry` gets modified every time we write something in the `<TextInput>`, meaning we cannot really have more than one entry at the time with our current code.
+
+To solve this problem we can take advantage of data structures' inner logic and structure to organise our data.
+
+Let's look at a JavaScript example of what this will look like before we make it in React Native
+
+---
+zoom: 0.9
+---
+
+```js {monaco-run} {autorun: false}
+// 1. Initialize an empty array (our data store)
+var feedHistory = []; //because React Native loves consts, this will be a const there this is just an example!
+
+// 2. This function takes "entry" and "adds" it to the beginning of the feedHistory Array
+function addFeedEntry(entry) {
+  feedHistory = [entry, ...feedHistory];
+}
+
+// Add first entry
+addFeedEntry({ personName: "Luis", amount: 20, notes: "Breakfast" });
+// Add second entry
+//addFeedEntry({ personName: "Sarah", amount: 15, notes: "Lunch" });
+// Add third entry
+//const feedEntryExample = { personName: "Luis", amount: 30, notes: "Dinner" };
+//addFeedEntry(feedEntryExample)
+
+console.log(feedHistory);
+```
+
+---
+level: 2
+---
+
+# Rethinking how data travels across screens
+
+What if instead of sending each variable, we put all the variables inside an object, and we send that object?
+
+Our current layout with the button can be repurporsed so that:
+
+0. The user fills in the details
+1. The user presses the "Save" button
+2. The user input is put into an object
+3. The object is added to the feedHistory array
+
+---
+level: 2
+---
+
+# Mapping the contents of our object to the UI
+
+Remember the `map` function from Programming Experimental Interactions?
+
+We are going to use it to fill our UI with the contents of our object.
+
+```js
+export default function HistoryScreen({ feedEntries }) {
+  return (
+    <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+      <Text style={styles.title}>Feeding History</Text>
+        <View style={styles.listWrapper}>
+          {feedEntries.map((item, index) => (
+            <View key={index} style={styles.card}>
+              <Text style={styles.mainText}>Fed by: {item.personName}</Text>
+              <Text style={styles.subText}>Amount: {item.amount} grams</Text>
+              <Text style={styles.subText}>Notes: {item.notes || 'No remarks'}</Text>
+            </View>
+          ))}
+        </View>
+    </ScrollView>
+  );
+}
+```
+
+
+---
+level: 2
+---
+
+# Custom Components
+
+Now that is a lot of code that maybe we want to re-use for another time. Here is where Custom Components come in.
+
+We can take the code above, and add it to its own file called `FeedEntryCard.js` and there write the basic abstract version of the component:
+
+```js
+import { View, Text, StyleSheet } from 'react-native';
+
+export default function FeedEntryCard({ item }) {
+  return (
+    <View style={styles.card}>
+      <Text style={styles.mainText}>Fed by: {item.personName}</Text>
+      <Text style={styles.subText}>Amount: {item.amount} grams</Text>
+      <Text style={styles.subText}>Notes: {item.notes || 'No remarks'}</Text>
+    </View>
+  );
+}
+```
+
+---
 
