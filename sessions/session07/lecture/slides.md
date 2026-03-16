@@ -35,7 +35,8 @@ hideInToc: true
 
 - The cheatsheet has been updated, check it out on LearnIT
 - Guides have been updated so all commands use SDK 54
-- I am a bit busy with another project for the DASYA Lab until the 29th, so I ask for a bit of patience for your feedback for Assignment #1
+- Sorry if responding slower than the usual, but I will help you as soon as I can
+- I am a bit busy with another project for the DASYA Lab until the 29th of March, so I ask for a bit of patience for your feedback for Assignment #1
 - What I seen so far looks good though!
 - Also I have noticed that some people have used ChatGPT/Claude/LLMs to write parts of the code, that is ok, just bear in mind of ITU guidelines when using it for the exam
 
@@ -147,32 +148,30 @@ backgroundSize: 120%
 - This is different from `BottomTabNavigator` which exists _across_ all our screens
 - Because of this, it's recommended that stack navigation generally follows the logic of the screen in which it has been initialised
 
+---
+hideInToc: true
+layout: center
+---
+
+Our HomeStack will look like this:
+
+
+<img src="./assets/imgs/stack.drawio.svg" width=100%>
+
+
 
 ---
 hideInToc: true
 layout: center
-
 ---
 
 # Planning Stack Navigation
 
-In our case, our _stack_ for the Home screen will look like this:
 
-
-<style>
-  h1 {
-    text-align: center
-  }
-</style>
-
----
-layout: center
----
-
-And our full app **navigation** will look like this:
+Our full app **navigation** will look like this:
 
 ```mermaid
-flowchart TD
+flowchart BT
   B[Tab.Navigator]
 
   B --> C[Tab: HomeStack]
@@ -180,7 +179,7 @@ flowchart TD
   B --> E[Tab: Profile]
 
   C --> G[HomeStack: HomeScreen]
-  G --> H[History: HistoryScreen]
+  G --> H[HomeStack: FeedHistoryScreen]
 ```
 
 ---
@@ -622,10 +621,14 @@ We will do another Menti to see what you would like to do/see/re-cap during thes
 
 
 ---
+layout: center
+---
 
 # Exercises Session 7
 
+For this exercise, we continue on the cat app and you get 3-4 exercises to apply everything we learnt in class today.
 
+Check out the link on LearnIT or [by clicling here](https://github.com/luuislanda/PMA2026/blob/main/sessions/session07/exercise/description.md)
 
 
 ---
