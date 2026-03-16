@@ -2,6 +2,69 @@
 
 Over the course of the semester, this page will be updated with tips and tricks of things you will use a lot. If you would like to contribute feel free to send a pull request!
 
+
+- [Cheatsheet](#cheatsheet)
+  - [Project Set Up](#project-set-up)
+    - [Setting Up a New Project](#setting-up-a-new-project)
+  - [React Native Components](#react-native-components)
+    - [`<View>`](#view)
+      - [Syntax](#syntax)
+      - [Props](#props)
+    - [`<Text>`](#text)
+      - [Syntax](#syntax-1)
+      - [Props](#props-1)
+    - [`<Image />`](#image-)
+      - [Syntax](#syntax-2)
+      - [Props](#props-2)
+      - [Online vs local files](#online-vs-local-files)
+        - [Online Images](#online-images)
+        - [Local Images](#local-images)
+    - [`<Button />`](#button-)
+      - [Syntax](#syntax-3)
+      - [Props](#props-3)
+    - [`Alert` function](#alert-function)
+      - [Parameters](#parameters)
+    - [`<ScrollView>`](#scrollview)
+      - [Syntax](#syntax-4)
+      - [Props](#props-4)
+    - [`<Pressable>`](#pressable)
+      - [Syntax](#syntax-5)
+      - [Props](#props-5)
+    - [`<TouchableOpacity>`](#touchableopacity)
+      - [Syntax](#syntax-6)
+      - [Props](#props-6)
+    - [`<TextInput />`](#textinput-)
+      - [Syntax](#syntax-7)
+      - [Props](#props-7)
+  - [StyleSheet](#stylesheet)
+    - [Syntax](#syntax-8)
+    - [Example](#example)
+    - [Some commonly used properties](#some-commonly-used-properties)
+  - [Flexbox](#flexbox)
+    - [Syntax](#syntax-9)
+    - [Quick Figma Comparison](#quick-figma-comparison)
+  - [React Native Hooks](#react-native-hooks)
+    - [`useState`](#usestate)
+      - [Syntax](#syntax-10)
+      - [How to use](#how-to-use)
+      - [Parts](#parts)
+    - [`useNavigation`](#usenavigation)
+      - [Syntax](#syntax-11)
+      - [How to navigate](#how-to-navigate)
+  - [Navigation](#navigation)
+    - [Bottom Tab Navigation](#bottom-tab-navigation)
+      - [Syntax](#syntax-12)
+      - [`<Tab.Navigator>` screenOptions](#tabnavigator-screenoptions)
+      - [`<Tab.Screen>` options](#tabscreen-options)
+    - [Stack Navigation (NativeStack)](#stack-navigation-nativestack)
+      - [Syntax](#syntax-13)
+      - [`<Stack.Screen>` options](#stackscreen-options)
+
+<!-- /code_chunk_output -->
+
+
+
+
 ## Project Set Up
 
 ### Setting Up a New Project
