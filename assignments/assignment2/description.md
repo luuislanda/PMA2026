@@ -142,7 +142,7 @@ Concretely the prototype's code must have:
 
 - 4 Screens
   - You must use a `BottomTabNavigator` as the main navigation of your prototype
-  - If you wish you can also use Stack navigation, though it is optional
+  - If you wish you can also use Stack navigation, though it is **_not required_**
 
 #### React Native Components and Functions
 
@@ -157,7 +157,6 @@ At least one of each of these components/functions:
 - `<TouchableOpacity>`
 - `<TextInput>`
 - `createBottomTabNavigator` from React Navigation
-- `createNativeStackNavigator` from React Navigation
 
 Your prototype _must_ be able to share data/variables across at least two screens. 
 
