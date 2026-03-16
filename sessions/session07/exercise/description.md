@@ -1,6 +1,9 @@
-# Cat Feeding App — Practical Exercises
+# Exercises Session 7
 
 These exercises use the Cat Feeding Tracker app as a starting point.
+
+You can download the code on LearnIT or copy the content of the `.js` files by going to the [github repository]
+
 All changes go inside the existing files you already have.
 
 ---

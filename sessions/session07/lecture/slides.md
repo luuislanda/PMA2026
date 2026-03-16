@@ -198,53 +198,6 @@ I will use the board but you are welcome to use Figma or any tool to do it
 </style>
 
 
----
-layout: image-right
-image: https://habrastorage.org/getpro/habr/upload_files/3ec/d4e/912/3ecd4e9126604c45ea40093a1f3e376d.gif
-backgroundSize: 50%
----
-
-
-# `<ScrollView>`
-
-To showcase the history of the times the cat was fed, we will need something that can be scrolled. 
-
-For this we can use the `<ScrollView>` component.
-
-Like the name implies, `<ScrollView>` functions exactly the same as a `<View>` but adding the ability to scroll.
-
-It is good for <u>**prototypes**</u> and for when you want to showcase a non-huge number of data/options.  
-
-Let's use it for the screen we just made
-
-
----
-layout: center
----
-
-Now let's add a button to our normal homescreen, so we can navigate to this new screen.
-
-
----
-layout: image-right
-image: https://www.codevscolor.com/ca6485d991adff26ddb8e5db68e481d3/react-native-touchablehighlight.gif
-backgroundSize: 50%
----
-
-
-# `<TouchableOpacity>`
-
-`<TouchableOppacity>` is extremely similar to `<Pressable>`, with the main added benefit that it includes an animation every time the user presses the component.
-
-- It is particularly useful for buttons, and any other actions that the user should get feedback on
-- It makes the styling of the feedback easier than `<Pressable>` and `<Button>`
-
-
----
-layout: center
----
-
-Break, see you in 15 minutes
 
 ---
 layout: center
@@ -358,6 +311,68 @@ export default function App() {
   );
 }
 ```
+
+---
+layout: image-right
+image: https://habrastorage.org/getpro/habr/upload_files/3ec/d4e/912/3ecd4e9126604c45ea40093a1f3e376d.gif
+backgroundSize: 50%
+---
+
+
+# `<ScrollView>`
+
+To showcase the history of the times the cat was fed, we will need something that can be scrolled. 
+
+For this we can use the `<ScrollView>` component.
+
+Like the name implies, `<ScrollView>` functions exactly the same as a `<View>` but adding the ability to scroll.
+
+It is good for <u>**prototypes**</u> and for when you want to showcase a non-huge number of data/options.  
+
+Let's use it for the screen we just made
+
+---
+hideInToc: true
+---
+
+### `<ScrollView>` props
+
+| Prop                  | Purpose                                                    | Requirement | Expects               |
+|-----------------------|------------------------------------------------------------|-------------|-----------------------|
+| style                 | Controls layout, spacing, and background of the container. | Optional    | Object: styles.name   |
+| contentContainerStyle | Styles applied to the inner scroll content wrapper.        | Optional    | Object: styles.name   |
+| horizontal            | Enables horizontal scrolling instead of vertical.          | Optional    | Boolean: true / false |
+| accessibilityLabel    | A description of the scroll area read aloud by screen readers.                                       | Optional    | String: ""            |
+
+
+---
+layout: center
+---
+
+Now let's add a button to our normal homescreen, so we can navigate to this new screen.
+
+
+---
+layout: image-right
+image: https://www.codevscolor.com/ca6485d991adff26ddb8e5db68e481d3/react-native-touchablehighlight.gif
+backgroundSize: 50%
+---
+
+
+# `<TouchableOpacity>`
+
+`<TouchableOppacity>` is extremely similar to `<Pressable>`, with the main added benefit that it includes an animation every time the user presses the component.
+
+- It is particularly useful for buttons, and any other actions that the user should get feedback on
+- It makes the styling of the feedback easier than `<Pressable>` and `<Button>`
+
+
+---
+layout: center
+---
+
+Break, see you in 15 minutes
+
 
 ---
 layout: image-left
