@@ -237,6 +237,7 @@ Stack navigation exists _within_ screens, what we do is turning those single scr
 Similar to the `BottomTabNavigator` we first initialise our stack as a variable in our `App.js` file
 
 ```js
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 const HomeStack = createNativeStackNavigator();
 ```
 
@@ -365,6 +366,33 @@ backgroundSize: 50%
 - It is particularly useful for buttons, and any other actions that the user should get feedback on
 - It makes the styling of the feedback easier than `<Pressable>` and `<Button>`
 
+---
+
+---
+
+# `useNavigation`
+
+The `useNavigation` function allows us to give any of our interactive components **inside our screens** the ability to navigate to _anywhere_ in the app.
+
+> It's like a navigation app. Depending on your location, it can tell you how to navigate to where you want to.
+
+It's a very useful tool to add extra navigation prompts/options to the user depending on the context.
+
+As it is meant for Screens, we add it to the screen `.js` file <u>**NOT**</u> the `App.js` file
+
+To use it, we first import it, in this case I import it to my `HomeScreen.js` file:
+
+```js
+import { useNavigation } from '@react-navigation/native';
+```
+
+Then you initialise it:
+
+```js
+  const navigation = useNavigation();
+```
+
+And now it's ready to be used!
 
 ---
 layout: center
@@ -552,6 +580,40 @@ p {
 }
 </style>
 
+
+---
+layout: two-cols-header
+---
+
+Changes in the `FeedScreen.js` and `App.js` file:
+
+Added all the variables to the function parameters
+
+::left::
+
+```js
+export default function FeedScreen() {
+  const navigation = useNavigation();
+}
+```
+
+::right::
+
+```js
+
+export default function FeedScreen({ 
+  personName, setPersonName, 
+  amountInGrams, setAmountInGrams, 
+  feedNotes, setfeedNotes}) {
+  const navigation = useNavigation();
+  }
+```
+
+<style>
+.two-cols-header {
+  column-gap: 20px; 
+}
+</style>
 
 ---
 layout: center
