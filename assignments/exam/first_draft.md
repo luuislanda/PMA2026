@@ -49,15 +49,16 @@ A prototype doesn't need to be a fully-featured app. You can have simplified fea
 ### Practical Information
 
 - **Exam type:** Pass / Fail
-- **Group or individual:** This is a <u>group</u> exam (2–4 students) with an additional <u>individual</u> component. You may also work individually.
+- **Format:** This is a <u>group</u> exam (2–4 students) with an additional <u>individual</u> component.
+  - You may also work alone, provided you are registerd as a group with 1 member
 - **What you submit:** A `.zip` file containing your code folder + written report as PDF
 - **Written Report length:** 
-  - Individual (solo) submission: 8 pages
-  - Group submission: 11 pages for the collaborative + individual contribution sections
-  - Additionally, each student must submit a 1-page individual assignment reflection. This page is not included in the page count above.
+  - Individual (solo) submission: 8 pages (cover page not included in count)
+  - Group submission (2-4 students): 11 pages total for collaborative + individual contribution sections (cover page not included in count)
+    - Additionally, each student must submit a 1-page individual assignment reflection. Reflection pages are submitted in addition to the counts above.
 - **Can I reuse my Assignment 2 code?** Yes, you are welcome to build on it. However, it is not a requirement.
 - **Is the concept/idea of my app evaluated?** No. You are evaluated on the minimal requirements set below and your reflection on the process.
-- **Screens required:** 5 app screens + 3 onboarding screens (8 total)
+- **Minimum Number of Screens required:** 5 app screens + 2 onboarding screens (7 total)
 
 ### How to Submit Your Exam
 
@@ -65,10 +66,12 @@ A prototype doesn't need to be a fully-featured app. You can have simplified fea
 
 > This will be updated, once I hear back from ITU about their new WISEflow system. In theory it should be the same as previous assignments but we'll see
 
+There is an `Exam Activity` on LearnIT. There, one person from your group should submit the exam for all of your group.
+
 
 #### File Submission
 
-Each group/student must submit a `.zip` file containing a folder with the files of the app and the written report as a PDF file. The written report should include a link to the Figma design file on which the code is based.
+Each group must submit a `.zip` file containing a folder with the files of the app and the written report as a PDF file. The written report should include a link to the Figma design file on which the code is based.
 
 If you are unsure of how to make a `.zip` file, or your `.zip` file is taking too long to be made/uploaded. Please follow the <u>**[file submission guide](https://github.com/luuislanda/PMA2026/tree/main/guides/submission-guide)**</u>
 
@@ -92,6 +95,9 @@ Here is the checklist for the files that must be submitted for this exam:
     - [ ] all your screen `.js` files
 
 #### Written Report Submission Checklist
+
+Here is the checklist for the written report that must be submitted for this exam:
+
 
 - [ ] Written report as a PDF file
   - [ ] Cover page
@@ -126,7 +132,7 @@ Failing to clearly mark generative AI usage can result in failing the exam on gr
 
 ### Theme of the Application/Prototype
 
-> _The course and the ILOs clearly state this is a course about **hands-on programming of mobile applications.** You will _not_ be evaluated on the concept of your app/prototype‼️_
+> _The course and the ILOs clearly state this is a course about **hands-on programming of mobile applications.** You will <u>not</u> be evaluated on the concept of your app/prototype‼️_
 
 For your exam, you have two options for choosing a theme. You may also build upon the work you completed for Assignment 2 if you wish, but this is optional. You are also free to start fresh with a different concept.
 
@@ -197,9 +203,12 @@ Additionally, across the screens the following requirements are set:
 
 ##### Onboardings Screens
 
-- 3 Screens
-  - Your onboarding screens should appear the first time the app is run (Introduced in Session 10)
+> OBS: This section will have slight changes after we introduce the topic in class
+
+- 2 Screens
+  - Your onboarding screens should be the first thing that appears when the app is run (Introduced in Session 9 or 10)
   - They must explain to a new user, the logic of the app and how to use it
+  - They should include a "Skip" button to go straight to the app
 
 #### React Native Components and Functions
 
@@ -222,7 +231,7 @@ Your prototype _must_ be able to share data/variables across at least two screen
 
 ### Minimum Accessibility Requirements
 
-Your prototypes interactive functions **must** be fully compliant with the WCAG's 2.2 guidelines at Level A. 
+Your prototypes interactive functions **must be fully compliant with the WCAG's 2.2 guidelines at Level A.** 
 
 - Provide meaningful alt text for all meaningful images.
 - Do not rely on color alone to communicate information.
@@ -231,7 +240,7 @@ Your prototypes interactive functions **must** be fully compliant with the WCAG'
 - Maintain a clear heading hierarchy across screens.
 - Ensure sufficient color contrast for text (recommended from Level AA, required in this exam).
 
-The rest of the prototype must attempt to be compliant with the same standards, though the requirement is mainly for the interactive components.
+The rest of the prototype must attempt to be compliant with the same standards, though the minimal requirement is mainly for the interactive components.
 
 #### Accesibility Implementation Refrence
 
@@ -249,7 +258,11 @@ Use these accessibility props in your code:
 
 ## Written Report
 
-As part of the exam submission, you must include a written report (minimum 8-11 pages depending on group size) that reflects on your process and technical work.
+As part of the exam submission, you must include a written report that reflects on your process and technical work.
+
+- Individual submission: 8 pages (cover page not included)
+- Group submission (2-4 students): 11 pages total for collaborative + individual contribution sections (cover page not included)
+  - Additionally, each student submits 1 extra page of individual assignment reflection (not included in the page counts above)
 
 - The report must be submitted as a PDF file
 - Generative AI guidelines also apply to the written content of the report
@@ -297,73 +310,100 @@ References (optional)
 Appendix (optional)
 ```
 
+
+### Quick example of number of pages according to group size
+
+Group of 2 people:
+  - Collaborative sections: 7 pages
+  - Individual Sections: 4 pages
+  - Main written report total: 11 pages
+  - Individual Assignment Reflections: 2 pages total (1 per student, additional)
+
+Group of 3 people:
+  - Collaborative sections: 7 pages
+  - Individual Sections: 4 pages total (shared across 3 students)
+  - Main written report total: 11 pages
+  - Individual Assignment Reflections: 3 pages total (1 per student, additional)
+
+Group of 4 people:
+  - Collaborative sections: 7 pages
+  - Individual Sections: 4 pages total (shared across 4 students)
+  - Main written report total: 11 pages
+  - Individual Assignment Reflections: 4 pages total (1 per student, additional)
+
+> Note: In group submissions, 11 pages is always the main report total (collaborative + individual contribution sections), regardless of whether there are 2, 3, or 4 students.
+
+
 #### Collaborative Sections (7 pages)
 
 **Cover** (does not count as a page)
 - **Question this section answers:** Who made this project, and what is each person's main contribution?
-- Title of prototype/app
-- Group member names
-- One-line summary of each member's main contribution
+- Include project title, course name, and exam period.
+- List all group members exactly as registered in LearnIT.
+- Add one sentence per member describing their main technical contribution.
 
 **1. Introduction** 
 - **Question this section answers:** What is your app, who is it for, and what is the prototype meant to demonstrate?
-- What app you built
-- Theme/concept and intended users
-- What the prototype is meant to demonstrate
+- State the app concept in 2-3 clear sentences.
+- Define target users and their main need/problem.
+  - In case the app is experimental, explain what the app is trying to achieve and for who.
+- Clarify prototype scope: what core functionality is included vs intentionally out of scope.
 
 **2. Background and Ideation** 
 - **Question this section answers:** Where did the idea come from, and how did it develop into a concrete prototype concept?
-- Initial app idea and motivation
-- Existing apps or references that informed your concept
-- How you moved from early sketches to a concrete Figma structure
+- Explain motivation: why this app idea and why now.
+- Show 1-2 references to apps or other media and how they influenced your app.
+- Describe how you went from idea and sketches to a Figma UI design
+  - If relevant, point out one major change in direction and why you made it.
 
 **3. Design Rationale and Guidelines** 
 - **Question this section answers:** Which design decisions did you make, and which guidelines or principles informed them?
-- Which design guidelines from the course (Sessions 1 and 10) you used
-- How/If those guidelines influenced your key UI/UX choices
-- Any deliberate design trade-offs you made in the pursuit of your vision
+- Name the concrete design guidelines/principles you applied.
+- Describe the navigation of the different screens in the app and why you set it up that way
+- Connect decisions to accessibility/usability where relevant.
+- Document trade-offs (what you prioritized, what you simplified, and why).
 
 **4. Technical Implementation Overview** 
 - **Question this section answers:** How is the prototype built, and how does it work in practice?
-- How the app is structured in React Native (screens, navigation, key components)
-- What interactive flow are you showing:
-  - Example: add entry -> save -> see it in history -> open details
-- How data is shared across screens
-- How design was translated from Figma into code
+- Show app architecture: navigation structure, key screens, and reusable components.
+- Describe one complete user flow step-by-step
+  - Example 1. Profile Screen Data Sharing: Go to profile -> Add data -> Show data in homescreen.
+  - Example 2. Image generator: Select landscape -> Select which characters to include -> Select time of day -> Generate image -> Show Image.
+- Explain how data is passed/shared across screens.
+- Include short code screenshots for critical parts (navigation, state, key component logic).
+- Mention any deviations from Figma and the technical reason behind them.
 
 **5. Collective Reflection** 
 - **Question this section answers:** What did you learn from the process, what challenges did you face, and how would you improve the prototype further?
-- What did you learn through this process of making a prototype for your app?
-- Feedback received and what you changed based on it
-- Main technical challenges and how you approached them
-- Current limitations and realistic future improvements
+- Summarize top 3 team learnings from design + coding.
+- Describe feedback received (in class or from peers) and concrete changes made from it.
+- Explain 2-3 main technical problems you encountered and how you solved (or partially solved) them.
+- Acknowledge current limitations of prototype.
+- Propose realistic next steps if you had more time.
 
 #### Individual Sections (one section per student) (1-2 pages per student)
 
 Each student should include a section with their **name and individual contribution** to the app development. Each person should include:
 
 - **Question this section answers:** What did you personally contribute to the project, and why does that contribution matter?
-
-- Which component(s)/screens you implemented and how they function
-- Key React Native choices you made and any challenges you faced
-- How your part connects to the rest of the app
-- Other contributions (if any), such as conceptual ideation, Figma/UI work or collaborative coding
-- At least one code screenshot with explanation of what it does and why it matters for the overall app
+- Identify the exact components/screens you owned.
+- Explain your implementation choices and trade-offs.
+- Include at least one annotated code screenshot of your contribution.
+- Show how your part integrates with other team members' work.
+- Mention any additional contributions (Figma, testing, integration, debugging, coordination).
 
 #### Individual Assignment Reflections (1 page per student)
 
 In addition to the report above, each student must include a **1-page individual reflection** on the two course assignments. This page is submitted in addition to the report and is **not included** in the report page count. The page is structured as follows:
 
 - **Question this section answers:** What did you learn from Assignments 1 and 2, and how did those assignments prepare you for the exam?
+- **½ page — Reflection on Assignment 1:** Key skills gained, one mistake/limitation, and what you applied in the exam.
+- **½ page — Reflection on Assignment 2:** Key skills gained, one improvement over Assignment 1, and what you would still do differently.
 
-- **½ page — Reflection on Assignment 1:** What did you learn from this assignment? What would you do differently? How did it inform your work on the exam?
-- **½ page — Reflection on Assignment 2:** What did you learn from this assignment? How did it build your skills for the exam? Do you think you would do something different?
 
 ### References
 
-**Question this section answers:** Which sources, course materials, or external references informed your work?
-
-You can include references to the academic papers introduced in the course and links to online resources provided throughout the course. However, **since this is a report focused mainly on the code and what you did in this project, references are optional.**
+You can include references to the academic papers introduced in the course and links to online resources provided throughout the course. However, _since this is a report focused mainly on the code and what you did in this project, references are optional._
 
 
 ### Advice for the Written Report
