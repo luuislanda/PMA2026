@@ -314,6 +314,7 @@ Appendix (optional)
 - Add one sentence per member describing their main technical contribution.
 
 **1. Introduction** 
+
 **Question this section answers:** What is your app, who is it for, and what is the prototype meant to demonstrate?
 - State the app concept in 2-3 clear sentences.
 - Define target users and their main need/problem.
@@ -321,6 +322,7 @@ Appendix (optional)
 - Clarify prototype scope: what core functionality is included vs intentionally out of scope.
 
 **2. Background and Ideation** 
+
 **Question this section answers:** Where did the idea come from, and how did it develop into a concrete prototype concept?
 - Explain motivation: why this app idea and why now.
 - Show 1-2 references to apps or other media and how they influenced your app.
@@ -328,6 +330,7 @@ Appendix (optional)
   - If relevant, point out one major change in direction and why you made it.
 
 **3. Design Rationale and Guidelines** 
+
 **Question this section answers:** Which design decisions did you make, and which guidelines or principles informed them?
 - Name the concrete design guidelines/principles you applied.
 - Describe the navigation of the different screens in the app and why you set it up that way
@@ -335,6 +338,7 @@ Appendix (optional)
 - Document trade-offs (what you prioritized, what you simplified, and why).
 
 **4. Technical Implementation Overview** 
+
 **Question this section answers:** How is the prototype built, and how does it work in practice?
 - Show app architecture: navigation structure, key screens, and reusable components.
 - Describe one complete user flow step-by-step
@@ -345,6 +349,7 @@ Appendix (optional)
 - Mention any deviations from Figma and the technical reason behind them.
 
 **5. Collective Reflection** 
+
 **Question this section answers:** What did you learn from the process, what challenges did you face, and how would you improve the prototype further?
 - Summarize top 3 team learnings from design + coding.
 - Describe feedback received (in class or from peers) and concrete changes made from it.
