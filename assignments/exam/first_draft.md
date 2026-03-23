@@ -260,10 +260,6 @@ Use these accessibility props in your code:
 
 As part of the exam submission, you must include a written report that reflects on your process and technical work.
 
-- Individual submission: 8 pages (cover page not included)
-- Group submission (2-4 students): 11 pages total for collaborative + individual contribution sections (cover page not included)
-  - Additionally, each student submits 1 extra page of individual assignment reflection (not included in the page counts above)
-
 - The report must be submitted as a PDF file
 - Generative AI guidelines also apply to the written content of the report
 
