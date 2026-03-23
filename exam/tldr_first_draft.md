@@ -1,12 +1,13 @@
-# PMA2026 Exam TL;DR (Most Basic)
+# PMA2026 Exam TL;DR
 
 - Build a working React Native prototype app.
-- Make it in a group of 2-4 (or alone as a 1-person group).
 - Submit one .zip with:
 	- app code folder
 	- written report as PDF
 
-## Minimum app requirements
+## Minimum Pass Requirements
+
+### Technical Requirements
 
 - 7 screens total:
 	- 5 app screens
@@ -20,17 +21,17 @@
 	- `Pressable`, `TouchableOpacity`
 	- `StyleSheet`, `useState`, `useNavigation`
 
-## Design + accessibility requirements
+### Design + Accessibility Eequirements
 
 - Make a Figma file with all screens.
 - Have 3 interactive components with variants in Figma, and code them in React Native.
-- Interactive parts must meet WCAG 2.2 Level A basics:
+- Interactive parts must meet WCAG 2.2 Level A:
 	- meaningful image alt text
 	- do not use color alone for meaning
 	- clear headings/titles
 	- accessibility props on buttons/inputs/tabs
 
-## Written report (basic)
+## Written report
 
 - PDF report with required sections (intro, ideation, design, technical implementation, reflection, individual contributions).
 - Include link to the Figma file.
@@ -39,4 +40,3 @@
 ## AI use
 
 - If you used generative AI, clearly document prompts, outputs, how you used them, and reflections.
-

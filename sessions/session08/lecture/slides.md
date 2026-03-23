@@ -36,10 +36,13 @@ hideInToc: true
 
 # Course Announcements
 
+- I am 1/3 in checking your assignment #1, expect to be done by friday next week
 - All groups that were called numbers have been renamed, check them out
-- Draft 1 of the exam brief is now available on LearnIT and in the repository
 - 
+- Draft 1 of the exam brief is now available on LearnIT and in the repository
 
+---
+layout: center
 ---
 
 # Exam Showcase
@@ -48,34 +51,40 @@ Let's look at the first draft of the exam brief.
 
 You can find it on LearnIT and in the repository:
 
-[Exam Draft 1](https://github.com/luuislanda/PMA2026/blob/main/assignments/exam/first_draft.md)
+[Direct Link Here](https://github.com/luuislanda/PMA2026/blob/main/assignments/exam/first_draft.md)
 
----
-
-## Demo 1: App that has minimum requirements for Exam
-
----
-
-## Demo 2: App that has minimum requirements for Exam but nicer
+<style>
+h1 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+</style>
 
 ---
 layout: center
 ---
 
-They both pass! 
+
+## Demo 1: App that has minimum requirements for Exam
+
+
 
 ---
-hideInToc: true
+layout: center
 ---
 
-# Why do they both pass?
 
-- Because the exam is not grading originality of the app idea
-- Because both prototypes communicate a clear concept
-- Because both can demonstrate the required interaction and navigation
-- Because both can be documented and reflected on in the report
+## Demo 2: App that has minimum requirements for Exam,  but nicer
 
-In other words, they meet the minimum requirements set by the exam document.
+
+
+---
+layout: center
+---
+
+They both obtain the same grade: pass.
 
 ---
 hideInToc: true
@@ -87,11 +96,12 @@ Do you think it's fair? Take 5 minutes and discuss it with your neighbour
 
 We'll then discuss it in class
 
+
 ---
 hideInToc: true
 ---
 
-If you are reading this from home (or dont want to participate in class), you can leave your feedback in this Menti also vailable on LearnIT. 
+If you are reading this from home (or dont want to participate in class), you can leave your feedback in this Mentimeter also vailable on LearnIT. 
 
 I will review all feedback before presenting the final version of the exam next session. 
 
@@ -99,13 +109,37 @@ I will review all feedback before presenting the final version of the exam next 
 hideInToc: true
 ---
 
-# What the exam is really asking from you
+# Why do they both pass?
 
-- Build a working mobile prototype in React Native
-- Show that the prototype communicates a clear app idea
-- Demonstrate the minimum technical requirements
-- Demonstrate the minimum accessibility requirements
-- Document your process, decisions, and limitations in the report
+- Because the exam is not grading originality of the app idea
+- Because both prototypes communicate a clear concept, despite differences in "polish" and features
+- Because both can demonstrate the required interaction and navigation
+
+In other words, they meet the minimum requirements set by the exam document.
+
+---
+hideInToc: true
+layout: two-cols-header
+---
+
+## How are these two examples different?
+
+Beyond the fancy features and design differences, the apps take two approaches. But fundamentally, they are the same
+
+::left::
+
+1st Example:
+- Mainly showcases the App
+- Language/text of App is as if it was the "real" app
+- Does not acknowledge it's a prototype
+
+::right::
+
+2nd Example:
+- Explicitly says its a prototype
+- Uses UX/Navigation to show the user through the prototype/app
+- Populates the screens with "fake" features
+
 
 
 ---
@@ -124,16 +158,12 @@ Here is one practical way to go from idea to prototype:
 6. Write your report
 7. If you want, continue polishing the app after the minimum version works
 
+
 ---
-hideInToc: true
+layout: center
 ---
 
-# Planning the development of a mobile application
-
-- How to move from idea -> screens -> components -> code
-- How to scope an app so it matches the exam requirements
-- How to split work in a group without creating chaos
-- How to decide what is core and what is optional polish
+Let's do this live, suggest an idea 
 
 ---
 
@@ -179,25 +209,58 @@ If the answer is "no" to several of these, the idea is probably too ambitious or
 
 ---
 hideInToc: true
+layout: two-cols-header
+zoom: 0.9
 ---
 
-# Ideas for apps that are too hard for the exam
+# Is my app idea "not allowed"?
 
-These are examples of ideas that do not match the scope of the course well:
+Some people have asked me if their idea of an would be too complicated and therefore not allowed for this exam.
 
-- Games or anything that depends on advanced game logic
-- Apps that require real-time collaboration
-- Audio, photo, or video editing apps
-- Concepts that only make sense with a complex backend
-- Re-making the cat feeding app from class as your exam app
+The answer is simple: can you demo your app idea via the UI/UX alone?
 
-Good exam ideas are usually simple, screen-based, and easy to prototype with local state and clear navigation.
+If not, then your app is too complicated and indeed not allowed
+If yes, then your idea is perfectly suited for the exam!
+
+::left::
+
+Example 1: Card (non-alcoholic) drinking game
+
+To demo such an app, you would have to code a big part of the game. Meaning you would have to handle:
+- Game logic
+- Graphics
+- Multiple states
+
+Veridict: _Very_ hard to prototype
+
+::right::
+
+Example 2: Social media for 3D cats
+
+To demo such an app, you do not have to have a fully rendering 3D function. Some images can replace the 3D cats. You can:
+- Make a screen for the profile, home, feed, one for a non-functional 3D cat scanner
+- Show how users "make" points in the feed via `<View>`s and `<Text>`s
+
+Veridict: Easy to prototype
+
+
+---
+layout: center
+---
+
+Ok but what if I _really_ _really_ want to code my prototype of a complicated app?
+
+Then just be strategic, so long as you meet the minimum requirements you will pass!
+
 
 ---
 hideInToc: true
+layout: image-right
+image: https://www.pragmaticcoders.com/wp-content/uploads/2024/10/Projekt-bez-nazwy-11-min.jpg.webp
+backgroundSize: 100%
 ---
 
-# Good prototype ideation from the brief
+# Good prototype ideation
 
 - Your concept is not what is being graded
 - The prototype must be working and interactive
@@ -207,6 +270,9 @@ hideInToc: true
 
 ---
 hideInToc: true
+layout: image-right
+image: https://brightspotcdn.byu.edu/dims4/default/0a05f77/2147483647/strip/true/crop/4256x2832+0+0/resize/800x532!/quality/90/?url=https%3A%2F%2Fbrigham-young-brightspot-us-east-2.s3.us-east-2.amazonaws.com%2Fdf%2F10%2F91a10875fc217246f49fe8ae04b5%2Four-town-156.JPG
+backgroundSize: 100%
 ---
 
 # A convincing prototype does not need everything
@@ -217,10 +283,15 @@ hideInToc: true
 - Think of it as proving the concept, not finishing the product
 
 ---
+layout: image-left
+image: https://d3h2k7ug3o5pb3.cloudfront.net/image/2021-10-04/77e7e650-24c0-11ec-b1a1-2f17757ade0b.gif
+zoom: 0.9
+---
 
 # How to make an prototype feel convincing
 
 - Make the core user flow work from start to finish
+    - Take advantage of the onboarding screens to guide the user to do what you want them to do
 - Use realistic screen titles, labels, and example content
 - Show cause and effect: input something here, see the result somewhere else
 - Keep the visual language consistent so the app feels like one product
@@ -228,13 +299,15 @@ hideInToc: true
 
 ---
 hideInToc: true
+layout: center
 ---
 
 
-# Focus on one interaction, the rest is decoration
+# Focus on one interaction
 
+- You have limited resources to code your app
 - It is better to have one feature working clearly than five fake features
-- Even better if the feature is related to the concept of the app!
+- Even better if the feature is directly related to the concept of the app!
 - Static screens are fine if they support the story of the app
 - But at least one central interaction should feel real
 - For example: add entry -> save -> see it in history -> open details
@@ -243,27 +316,16 @@ This is what makes the prototype persuasive.
 
 ---
 hideInToc: true
+layout: center
 ---
 
-# Use design to communicate the missing parts
+# Communicate the missing parts
 
 - A good onboarding flow can explain the purpose of the app
-- Clear empty states can show what will happen once the app has more data
+- As you saw in the example, **sometimes** acknowledging this is a prototype can be convincing
 - Thoughtful placeholder content can suggest future use without pretending it already exists
 - A consistent Figma design helps the prototype feel more complete than the code alone
-    - It also reassures me that you have vision for the app
-
----
-hideInToc: true
----
-
-# Things you might want to mention in the written report
-
-- Which parts of the concept are fully implemented
-- Which parts are simplified
-- Which parts are intentionally left out
-- Why those choices still communicate the core value of the app
-- What you would build next if you had more time
+- It also reassures me and others that you have vision for the app
 
 
 ---
@@ -271,6 +333,7 @@ layout: center
 ---
 
 Break
+See you in 15 minutes
 
 
 ---
@@ -284,7 +347,9 @@ This means, that you will have:
 - More time to refine your prototype
 - More time to align your work with the exam brief
 
-It also means that we have a few sessiong that we can dedicate to new topics or to revise some old topics.
+It also means that we have a few sessions that we can dedicate to new topics or to revise some old topics.
+
+In total we have 2 sessions available, which can be divided into four 45 minute sessions.
 
 ---
 
@@ -296,6 +361,7 @@ It also means that we have a few sessiong that we can dedicate to new topics or 
 - How to showcase your prototype in your portfolio
 - Next steps if mobile app development interests you
 - Recap of anything related to React Native
+
 
 
 ---
@@ -368,229 +434,10 @@ hideInToc: true
 
 This is the part of the course where we can slow down and revisit what you need most.
 
----
-
-Menti time
 
 ---
 
-# Re-cap of React Native
-
-We begin with a `View`, which is important because it contains everything we want to display.
-
-Our function must always return some form of UI, and in practice that usually means a main `View` containing the rest of the screen.
-
-- `View` gives structure
-- `Text` gives readable content
-- `Image` gives visual communication
-- Together, these form the visible layer of the prototype
-
----
-hideInToc: true
----
-
-# The three parts of your file
-
-By now, every one of you has seen the same structure many times:
-
-- Imports at the top
-- The function in the middle
-- The `StyleSheet` at the bottom
-
-This matters because your app is never just visuals.
-
-It is always a combination of tools, logic, and design.
-
----
-hideInToc: true
----
-
-# UI and logic are not the same thing
-
-There is a difference between the UI and the logic behind the app.
-
-- The UI is what the user sees: `View`, `Text`, `Image`, buttons, inputs
-- The logic is what makes the UI react: variables, functions, hooks, navigation
-- React Native mixes them in one file, but they still play different roles
-
-One of the most important examples of this is `useState`.
-
----
-hideInToc: true
----
-
-# The visible building blocks
-
-- `View`: the frame or container
-- `Text`: all written content must live inside `Text`
-- `Image`: visual assets, local or online
-- `ScrollView`: use it when the content is taller than the screen
-
-If these are organised well, the app already starts to feel understandable.
-
----
-hideInToc: true
----
-
-# Styling is what turns blocks into a screen
-
-- `StyleSheet` keeps styling separate from the JSX structure
-- Flexbox controls layout and spacing
-- `flexDirection`, `justifyContent`, and `alignItems` are the main tools
-- This is the React Native version of structuring frames in Figma
-
-A prototype becomes much more convincing when spacing and layout are consistent.
-
----
-hideInToc: true
----
-
-# Interaction starts with touch
-
-- `Pressable` is a flexible interactive wrapper
-- `TouchableOpacity` is similar, but gives built-in visual feedback
-- `Button` is useful for quick actions, but less flexible visually
-- `Alert` is not a component, it is a function for quick system feedback
-
-These are what make the app feel alive instead of static.
-
----
-hideInToc: true
----
-
-# Inputs make the prototype feel real
-
-- `TextInput` lets the user contribute data
-- Once the user can type, choose, or press something, the prototype becomes interactive
-- A lot of convincing prototypes are built from simple interactions, not complex systems
-
-For many exam apps, one strong input flow is enough:
-
-`TextInput` -> button press -> saved state -> shown somewhere else
-
----
-hideInToc: true
----
-
-# useState gives the app memory
-
-- `useState` stores changing values
-- It lives in the JS part of the component, before the `return`
-- When the state changes, React Native re-renders the UI
-
-This is how the app moves from "drawn screen" to "working prototype".
-
-Example idea:
-
-- The user types in a `TextInput`
-- The setter updates the variable
-- A `Text` component shows the new value on screen
-
----
-hideInToc: true
----
-
-# Components interact to tell one story
-
-A prototype is convincing when components are not isolated.
-
-- `TextInput` collects data
-- `TouchableOpacity` or `Pressable` triggers an action
-- `useState` stores the result
-- `Text`, `View`, or `ScrollView` display the updated result
-
-So the user can understand: "When I do this, the app responds like that."
-
----
-hideInToc: true
----
-
-# Navigation turns screens into an app
-
-- `createBottomTabNavigator` gives the main structure
-- `createNativeStackNavigator` gives drill-down flows inside that structure
-- `useNavigation` lets interactive elements move the user between screens
-
-Without navigation, you mostly have separate pages.
-
-With navigation, you start having a prototype.
-
----
-hideInToc: true
----
-
-# Data sharing is part of the story
-
-- It is not enough that screens exist next to each other
-- Often they should influence each other
-- One screen collects information
-- Another screen displays or uses that information
-
-That is why `useState`, props, and navigation start to work together.
-
----
-hideInToc: true
----
-
-# A prototype is screens plus relationships
-
-What makes an app feel like an app is not just having 5 screens.
-
-It is that the screens relate to each other:
-
-- one screen leads to another
-- one action changes something elsewhere
-- the navigation makes sense
-- the same visual language continues across screens
-
-That is why data sharing and navigation matter so much.
-
----
-hideInToc: true
----
-
-# Accessibility is part of the prototype
-
-Accessibility is not an extra layer you add at the end.
-
-- Meaningful images need `accessibilityLabel`
-- Buttons should expose `accessibilityRole="button"`
-- Inputs need `accessibilityLabel` and often `accessibilityHint`
-- Headings should be clearly structured
-- Color should never be the only way to communicate meaning
-
-If the prototype only works visually for some users, then the prototype is incomplete.
-
----
-hideInToc: true
----
-
-# Accessibility also helps the design itself
-
-- Clear labels improve comprehension for everyone
-- Better contrast improves readability for everyone
-- Better headings improve orientation for everyone
-- Better feedback improves confidence for everyone
-
-Accessible design is usually just better design.
-
----
-hideInToc: true
----
-
-# How all of this builds a prototype
-
-One possible chain looks like this:
-
-- `View` creates structure
-- `Text` and `Image` communicate the idea
-- `StyleSheet` and Flexbox make it readable
-- `TextInput` and touch components create interaction
-- `useState` stores what changes
-- Navigation connects the screens
-- Accessibility makes the experience understandable to more users
-
-This is already enough to build a convincing prototype.
+Let's open menti again and vote!
 
 ---
 hideInToc: true
@@ -611,8 +458,6 @@ That is what we have been building towards the whole semester.
 ### App ideation exercise and breaking things into components. 
 
 For this session, we will not ask you to program but instead we will follow an exercise on how to plan an app and break it into react native components.
-
-
 
 
 ---

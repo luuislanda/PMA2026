@@ -8,7 +8,6 @@
   - [What is a "prototype" in this exam?](#what-is-a-prototype-in-this-exam)
   - [Practical Information](#practical-information)
     - [How to Submit Your Exam](#how-to-submit-your-exam)
-    - [Checklist for Submission](#checklist-for-submission)
     - [Generative AI Use](#generative-ai-use)
   - [Theme of the Application/Prototype](#theme-of-the-applicationprototype)
     - [Theme Option 1: Open theme](#theme-option-1-open-theme)
@@ -31,6 +30,7 @@
 - [Template Starting Code](#template-starting-code)
 - [Example of Prototypes with the Minimum Requirements](#example-of-prototypes-with-the-minimum-requirements)
   - [Cat Feeder App](#cat-feeder-app)
+- [Checklist for Submission](#checklist-for-submission)
 
 
 ## Description of Exam
@@ -75,46 +75,6 @@ If you are unsure of how to make a `.zip` file, or your `.zip` file is taking to
 
 To obtain a link to your figma design, you can follow the guide [here.](https://help.figma.com/hc/en-us/articles/360040531773-Share-files-and-prototypes)
 
-### Checklist for Submission
-
-#### Code File Submission Checklist
-
-Here is the checklist for the files that must be submitted for this exam:
-
-- [ ] The folder with your working code
-  - [ ] App.js
-  - [ ] app.json
-  - [ ] assets (folder)
-    - [ ] any assets you've added
-  - [ ] index.js
-  - [ ] package_lock.json
-  - [ ] package.json
-  - [ ] screens (folder)
-    - [ ] all your screen `.js` files
-
-#### Written Report Submission Checklist
-
-Here is the checklist for the written report that must be submitted for this exam:
-
-
-- [ ] Written report as a PDF file
-  - [ ] Cover page
-    - [ ] Title of prototype/app
-    - [ ] Group member names
-    - [ ] One-line summary of each member's main contribution
-  - [ ] Introduction
-  - [ ] Background and Ideation
-  - [ ] Design Rationale and Guidelines
-  - [ ] Link to Figma design file 
-  - [ ] Technical Implementation Overview
-  - [ ] Collective Reflection
-  - [ ] Individual Sections (one section per student)
-    - [ ] Name and individual contribution
-    - [ ] Component(s)/screens coded with code snippets
-  - [ ] Individual Assignment Reflections (1 page per student)
-    - [ ] ½ page reflection on Assignment 1
-    - [ ] ½ page reflection on Assignment 2
-  - [ ] References (optional)
 
 ### Generative AI Use
 
@@ -445,3 +405,45 @@ Feel free to repurpose any code you've written or seen in the course so far.
 
 I will put a finished example after I show it in Session 8
 
+
+
+### Checklist for Submission
+
+#### Code File Submission Checklist
+
+Here is the checklist for the files that must be submitted for this exam:
+
+- [ ] The folder with your working code
+  - [ ] App.js
+  - [ ] app.json
+  - [ ] assets (folder)
+    - [ ] any assets you've added
+  - [ ] index.js
+  - [ ] package_lock.json
+  - [ ] package.json
+  - [ ] screens (folder)
+    - [ ] all your screen `.js` files
+
+#### Written Report Submission Checklist
+
+Here is the checklist for the written report that must be submitted for this exam:
+
+
+- [ ] Written report as a PDF file
+  - [ ] Cover page
+    - [ ] Title of prototype/app
+    - [ ] Group member names
+    - [ ] One-line summary of each member's main contribution
+  - [ ] Introduction
+  - [ ] Background and Ideation
+  - [ ] Design Rationale and Guidelines
+  - [ ] Link to Figma design file 
+  - [ ] Technical Implementation Overview
+  - [ ] Collective Reflection
+  - [ ] Individual Sections (one section per student)
+    - [ ] Name and individual contribution
+    - [ ] Component(s)/screens coded with code snippets
+  - [ ] Individual Assignment Reflections (1 page per student)
+    - [ ] ½ page reflection on Assignment 1
+    - [ ] ½ page reflection on Assignment 2
+  - [ ] References (optional)
