@@ -38,8 +38,9 @@ hideInToc: true
 
 - I am 1/3 in checking your assignment #1, expect to be done by friday next week
 - All groups that were called numbers have been renamed, check them out
-- 
+- Officially one more technical session and then no more programming in class that you will be examined on
 - Draft 1 of the exam brief is now available on LearnIT and in the repository
+- It is a draft, the final version will be ready by next session
 
 ---
 layout: center
@@ -88,22 +89,44 @@ They both obtain the same grade: pass.
 
 ---
 hideInToc: true
+layout: center
 ---
 
 # Alignment of Expectations: Exam
 
-Do you think it's fair? Take 5 minutes and discuss it with your neighbour
+Do you think it's fair? Take 5 minutes to re-read it and discuss it with your neighbour
 
 We'll then discuss it in class
+
+<style>
+h1 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+</style>
 
 
 ---
 hideInToc: true
+layout: center
 ---
 
 If you are reading this from home (or dont want to participate in class), you can leave your feedback in this Mentimeter also vailable on LearnIT. 
 
-I will review all feedback before presenting the final version of the exam next session. 
+[https://www.menti.com/albeifkqaezp](https://www.menti.com/albeifkqaezp)
+
+I will review all feedback before presenting the final version of the exam next session.
+
+<style>
+h1 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+</style>
 
 ---
 hideInToc: true
@@ -352,6 +375,8 @@ It also means that we have a few sessions that we can dedicate to new topics or 
 In total we have 2 sessions available, which can be divided into four 45 minute sessions.
 
 ---
+layout: center
+---
 
 # Possible topics for the second part of the course
 
@@ -366,6 +391,7 @@ In total we have 2 sessions available, which can be divided into four 45 minute 
 
 ---
 hideInToc: true
+layout: center
 ---
 
 # Planning the development of a mobile application
@@ -377,6 +403,7 @@ hideInToc: true
 
 ---
 hideInToc: true
+layout: center
 ---
 
 # Using AI tools to program mobile applications
@@ -388,6 +415,7 @@ hideInToc: true
 
 ---
 hideInToc: true
+layout: center
 ---
 
 # Figma clickable prototypes
@@ -399,6 +427,7 @@ hideInToc: true
 
 ---
 hideInToc: true
+layout: center
 ---
 
 # How to showcase your prototype in your portfolio
@@ -410,6 +439,7 @@ hideInToc: true
 
 ---
 hideInToc: true
+layout: center
 ---
 
 # Next steps if mobile app development interests you
@@ -420,24 +450,10 @@ hideInToc: true
 - How to keep building a portfolio after the exam
 
 ---
-hideInToc: true
+layout: center
 ---
 
-# Recap of anything related to React Native
-
-- Components
-- Styling and layout
-- Inputs and interactivity
-- State and data flow
-- Navigation
-- Accessibility
-
-This is the part of the course where we can slow down and revisit what you need most.
-
-
----
-
-Let's open menti again and vote!
+Let's open menti again and vote
 
 ---
 hideInToc: true
@@ -466,6 +482,6 @@ For this session, we will not ask you to program but instead we will follow an e
 
 - Next week it's holidays!
 - So we begin again on the 7th of April
-- Session 9 was supposed to be a guest lecture, but so far no one confirmed :/
+- Session 9 was supposed to be a guest lecture, but no one confirmed :/
 - I will most like do the contents of session 10 in session 9
 - That means we'll look at the Onboarding Screens
