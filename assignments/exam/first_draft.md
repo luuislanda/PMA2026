@@ -10,25 +10,26 @@
     - [How to Submit Your Exam](#how-to-submit-your-exam)
     - [Checklist for Submission](#checklist-for-submission)
     - [Generative AI Use](#generative-ai-use)
-- [Theme of the Application/Prototype](#theme-of-the-applicationprototype)
-  - [Theme Option 1: Open theme](#theme-option-1-open-theme)
-  - [Theme Option 2: Select a theme from the list below](#theme-option-2-select-a-theme-from-the-list-below)
+  - [Theme of the Application/Prototype](#theme-of-the-applicationprototype)
+    - [Theme Option 1: Open theme](#theme-option-1-open-theme)
+    - [Theme Option 2: Select a theme from the list below](#theme-option-2-select-a-theme-from-the-list-below)
 - [Design, Accesibility and Technical Requirements](#design-accesibility-and-technical-requirements)
   - [Minimum Pass Criteria](#minimum-pass-criteria)
   - [Minimum Design Requirements](#minimum-design-requirements)
   - [Minimum Technical Requirements](#minimum-technical-requirements)
   - [Minimum Accessibility Requirements](#minimum-accessibility-requirements)
-- [Examples of Prototypes with the Minimum Requirements](#examples-of-prototypes-with-the-minimum-requirements)
 - [Written Report](#written-report)
-  - [Practical Information about Written Report](#practical-information-about-written-report)
   - [Written Report Structure](#written-report-structure)
-  - [Sample Table of Contents](#sample-table-of-contents)
+  - [Example of a Group Submission](#example-of-a-group-submission)
+  - [Example TOC for an Individual Submission](#example-toc-for-an-individual-submission)
   - [Collaborative Sections](#collaborative-sections-7-pages)
   - [Individual Sections](#individual-sections-one-section-per-student-1-2-pages-per-student)
   - [Individual Assignment Reflections](#individual-assignment-reflections-1-page-per-student)
   - [References](#references)
   - [Advice for the Written Report](#advice-for-the-written-report)
 - [Template Starting Code](#template-starting-code)
+- [Examples of Prototypes with the Minimum Requirements](#examples-of-prototypes-with-the-minimum-requirements)
+  - [Cat Feeder App](#cat-feeder-app)
 
 
 ## Description of Exam
@@ -246,27 +247,14 @@ Use these accessibility props in your code:
 | `<Tab.Screen>` in BottomTabNavigator | `tabBarAccessibilityLabel` |
 
 
-
-## Examples of Prototypes with the Minimum Requirements
-
-### Example
-
-I will put a finished example after Session 8 :)
-
-
 ## Written Report
 
 As part of the exam submission, you must include a written report (minimum 8-11 pages depending on group size) that reflects on your process and technical work.
-
-### Practical Information about Written Report
 
 - The report must be submitted as a PDF file
 - Generative AI guidelines also apply to the written content of the report
 
 ### Written Report Structure
-
-
-### Sample Table of Contents
 
 #### Example of a Group Submission
 
@@ -390,3 +378,10 @@ You can include references to the academic papers introduced in the course and l
 If you wish, you can use the template that was given to you for Assignment #2 that includes a `BottomTabNavigator` and 4 screens. You can find it on LearnIT.
 
 Feel free to repurpose any code you've written or seen in the course so far.
+
+## Examples of Prototypes with the Minimum Requirements
+
+### Cat Feeder App
+
+I will put a finished example after I show it in Session 8
+
