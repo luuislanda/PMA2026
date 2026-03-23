@@ -22,6 +22,7 @@
   - [Written Report Structure](#written-report-structure)
   - [Example of a Group Submission](#example-of-a-group-submission)
   - [Example TOC for an Individual Submission](#example-toc-for-an-individual-submission)
+  - [Quick example of number of pages according to group size](#quick-example-of-number-of-pages-according-to-group-size)
   - [Collaborative Sections](#collaborative-sections-7-pages)
   - [Individual Sections](#individual-sections-one-section-per-student-1-2-pages-per-student)
   - [Individual Assignment Reflections](#individual-assignment-reflections-1-page-per-student)
@@ -105,15 +106,14 @@ Here is the checklist for the written report that must be submitted for this exa
   - [ ] Design Rationale and Guidelines
   - [ ] Link to Figma design file 
   - [ ] Technical Implementation Overview
-  - [ ] Evaluation, Decisions, and Reflection
-  - [ ] Individual section per student
+  - [ ] Collective Reflection
+  - [ ] Individual Sections (one section per student)
     - [ ] Name and individual contribution
     - [ ] Component(s)/screens coded with code snippets
-  - [ ] References (optional)
-  - [ ] Individual assignment reflection per student
+  - [ ] Individual Assignment Reflections (1 page per student)
     - [ ] ½ page reflection on Assignment 1
     - [ ] ½ page reflection on Assignment 2
-
+  - [ ] References (optional)
 
 ### Generative AI Use
 
@@ -133,6 +133,9 @@ Failing to clearly mark generative AI usage can result in failing the exam on gr
 For your exam, you have two options for choosing a theme. You may also build upon the work you completed for Assignment 2 if you wish, but this is optional. You are also free to start fresh with a different concept.
 
 #### Theme Option 1: Open theme
+
+> _**OBS**: If you go for an open theme, it's entirely up to you how much time you spend in the ideation/conceptualisation part of your prototype._
+
 If you choose option 1, the app/prototype can be (almost) anything. It just has to be a prototype of an "app" and conform to the minimal requirements set below. 
 
 In practice, this means this can be a health care app, a podcast app, a journal app, a dictionary, pretty much anything.
@@ -143,14 +146,13 @@ These restrictions apply to possible apps that are entirely driven by complex ar
 
 For example, You are not allowed to make:
 - Games or anything that requires some advanced backend logic
-    - To demo a full game would require part of the game logic to exist, that is beyond the curriculum
 - Any app that requires "real time" collaboration
 - Apps for media (audio,photo,video) editing
 - A cat/pet feeding app which we built in class
 
 If you are unsure whether your app is feasible, you can always contact the course manager.
 
-> _**OBS**: If you go for an open theme, it's entirely up to you how much time you spend in the ideation/conceptualisation part of your prototype._
+
 
 
 
@@ -303,34 +305,47 @@ Appendix (optional)
 ```
 
 
-### Quick example of number of pages according to group size
+### Number of pages
+
+A page is understood as 2400 characters/units per page, including spaces and footnotes. This is the [standard page according to ITU](https://itustudent.itu.dk/Study-Administration/Project-Work/Workload-and-Project-Size)
+
+Each report may be ±10% of the total page count.
+
+#### Examples of number of pages according to group size
+
+Individual submission:
+
+- **Main written report total**: 7 pages
+- **Individual Assignment Reflections**: 1 page total (1 per student, additional)
+
+Total pages submitted: 8 (±10%) distributed as the student sees fit
 
 Group of 2 people:
 
-- **Main written report total: 11 pages**
+- **Main written report total**: 11 pages
   - Collaborative sections: 7 pages
   - Individual Sections: 4 pages
-- Individual Assignment Reflections: 2 pages total (1 per student, additional)
+- **Individual Assignment Reflections**: 2 pages total (1 per student, additional)
 
-Total pages submitted: 13 pages
+Total pages submitted: 13 pages (±10%)
 
 Group of 3 people:
 
 - **Main written report total: 11 pages**
   - Collaborative sections: 7 pages
   - Individual Sections: 4 pages total (shared across 3 students)
-- Individual Assignment Reflections: 3 pages total (1 per student, additional)
+- **Individual Assignment Reflections**: 3 pages total (1 per student, additional)
 
-Total pages submitted: 14 pages
+Total pages submitted: 14 pages (±10%)
 
 Group of 4 people:
 
 - **Main written report total: 11 pages**
   - Collaborative sections: 7 pages
   - Individual Sections: 4 pages total (shared across 4 students)
-- Individual Assignment Reflections: 4 pages total (1 per student, additional)
+- **Individual Assignment Reflections**: 4 pages total (1 per student, additional)
 
-Total pages submitted: 15 pages
+Total pages submitted: 15 pages (±10%)
 
 
 #### Collaborative Sections (7 pages)
