@@ -325,26 +325,31 @@ Appendix (optional)
 #### Collaborative Sections (7 pages)
 
 **Cover** (does not count as a page)
+- **Question this section answers:** Who made this project, and what is each person's main contribution?
 - Title of prototype/app
 - Group member names
 - One-line summary of each member's main contribution
 
 **1. Introduction** 
+- **Question this section answers:** What is your app, who is it for, and what is the prototype meant to demonstrate?
 - What app you built
 - Theme/concept and intended users
 - What the prototype is meant to demonstrate
 
 **2. Background and Ideation** 
+- **Question this section answers:** Where did the idea come from, and how did it develop into a concrete prototype concept?
 - Initial app idea and motivation
 - Existing apps or references that informed your concept
 - How you moved from early sketches to a concrete Figma structure
 
 **3. Design Rationale and Guidelines** 
+- **Question this section answers:** Which design decisions did you make, and which guidelines or principles informed them?
 - Which design guidelines from the course (Sessions 1 and 10) you used
 - How/If those guidelines influenced your key UI/UX choices
 - Any deliberate design trade-offs you made in the pursuit of your vision
 
 **4. Technical Implementation Overview** 
+- **Question this section answers:** How is the prototype built, and how does it work in practice?
 - How the app is structured in React Native (screens, navigation, key components)
 - What interactive flow are you showing:
   - Example: add entry -> save -> see it in history -> open details
@@ -352,6 +357,7 @@ Appendix (optional)
 - How design was translated from Figma into code
 
 **5. Collective Reflection** 
+- **Question this section answers:** What did you learn from the process, what challenges did you face, and how would you improve the prototype further?
 - What did you learn through this process of making a prototype for your app?
 - Feedback received and what you changed based on it
 - Main technical challenges and how you approached them
@@ -360,6 +366,8 @@ Appendix (optional)
 #### Individual Sections (one section per student) (1-2 pages per student)
 
 Each student should include a section with their **name and individual contribution** to the app development. Each person should include:
+
+- **Question this section answers:** What did you personally contribute to the project, and why does that contribution matter?
 
 - Which component(s)/screens you implemented and how they function
 - Key React Native choices you made and any challenges you faced
@@ -371,10 +379,14 @@ Each student should include a section with their **name and individual contribut
 
 In addition to the report above, each student must include a **1-page individual reflection** on the two course assignments. This page is submitted in addition to the report and is **not included** in the report page count. The page is structured as follows:
 
+- **Question this section answers:** What did you learn from Assignments 1 and 2, and how did those assignments prepare you for the exam?
+
 - **½ page — Reflection on Assignment 1:** What did you learn from this assignment? What would you do differently? How did it inform your work on the exam?
 - **½ page — Reflection on Assignment 2:** What did you learn from this assignment? How did it build your skills for the exam? Do you think you would do something different?
 
 ### References
+
+**Question this section answers:** Which sources, course materials, or external references informed your work?
 
 You can include references to the academic papers introduced in the course and links to online resources provided throughout the course. However, **since this is a report focused mainly on the code and what you did in this project, references are optional.**
 
@@ -383,7 +395,6 @@ You can include references to the academic papers introduced in the course and l
 
 - **Start documenting early:** Keep notes as you work so writing the final report is easier.
 - **Avoid repetition:** Each section should answer a different question (idea, design decisions, implementation, evaluation).
-- **Group vs individual writing:** Group submissions should write the collaborative sections together; individual submissions should cover the same structure from an individual perspective.
 - **GenAI transparency:** Clearly mark any AI-generated text/code and explain how you used and adapted it.
 - **Focus on process and reasoning:** Explain not only what you built, but why you made those decisions.
 
