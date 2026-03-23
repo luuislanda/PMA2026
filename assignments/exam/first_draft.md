@@ -56,6 +56,7 @@ A prototype doesn't need to be a fully-featured app. You can have simplified fea
 - **Can I reuse my Assignment 2 code?** Yes, you are welcome to build on it. However, it is not a requirement.
 - **Is the concept/idea of my app evaluated?** No. You are evaluated on the minimal requirements set below and your reflection on the process.
 - **Minimum Number of Screens required:** 5 app screens + 2 onboarding screens (7 total)
+- **How many pages must the written report be?** Check the [Number of pages](#number-of-pages) section below
 
 ### How to Submit Your Exam
 
@@ -308,34 +309,33 @@ Appendix (optional)
 #### Collaborative Sections 
 
 **Cover** 
-- **Question this section answers:** Who made this project, and what is each person's main contribution?
 - Include project title, course name, and exam period.
 - List all group members exactly as registered in LearnIT.
 - Add one sentence per member describing their main technical contribution.
 
 **1. Introduction** 
-- **Question this section answers:** What is your app, who is it for, and what is the prototype meant to demonstrate?
+**Question this section answers:** What is your app, who is it for, and what is the prototype meant to demonstrate?
 - State the app concept in 2-3 clear sentences.
 - Define target users and their main need/problem.
   - In case the app is experimental, explain what the app is trying to achieve and for who.
 - Clarify prototype scope: what core functionality is included vs intentionally out of scope.
 
 **2. Background and Ideation** 
-- **Question this section answers:** Where did the idea come from, and how did it develop into a concrete prototype concept?
+**Question this section answers:** Where did the idea come from, and how did it develop into a concrete prototype concept?
 - Explain motivation: why this app idea and why now.
 - Show 1-2 references to apps or other media and how they influenced your app.
 - Describe how you went from idea and sketches to a Figma UI design
   - If relevant, point out one major change in direction and why you made it.
 
 **3. Design Rationale and Guidelines** 
-- **Question this section answers:** Which design decisions did you make, and which guidelines or principles informed them?
+**Question this section answers:** Which design decisions did you make, and which guidelines or principles informed them?
 - Name the concrete design guidelines/principles you applied.
 - Describe the navigation of the different screens in the app and why you set it up that way
 - Connect decisions to accessibility/usability where relevant.
 - Document trade-offs (what you prioritized, what you simplified, and why).
 
 **4. Technical Implementation Overview** 
-- **Question this section answers:** How is the prototype built, and how does it work in practice?
+**Question this section answers:** How is the prototype built, and how does it work in practice?
 - Show app architecture: navigation structure, key screens, and reusable components.
 - Describe one complete user flow step-by-step
   - Example 1. Profile Screen Data Sharing: Go to profile -> Add data -> Show data in homescreen.
@@ -345,7 +345,7 @@ Appendix (optional)
 - Mention any deviations from Figma and the technical reason behind them.
 
 **5. Collective Reflection** 
-- **Question this section answers:** What did you learn from the process, what challenges did you face, and how would you improve the prototype further?
+**Question this section answers:** What did you learn from the process, what challenges did you face, and how would you improve the prototype further?
 - Summarize top 3 team learnings from design + coding.
 - Describe feedback received (in class or from peers) and concrete changes made from it.
 - Explain 2-3 main technical problems you encountered and how you solved (or partially solved) them.
@@ -356,7 +356,7 @@ Appendix (optional)
 
 Each student should include a section with their **name and individual contribution** to the app development. Each person should include:
 
-- **Question this section answers:** What did you personally contribute to the project, and why does that contribution matter?
+**Question this section answers:** What did you personally contribute to the project, and why does that contribution matter?
 - Identify the exact components/screens you owned.
 - Explain your implementation choices and trade-offs.
 - Include at least one annotated code screenshot of your contribution.
@@ -380,7 +380,7 @@ You can include references to the academic papers introduced in the course and l
 
 ### Number of pages
 
-A page is understood as 2400 characters/units per page, including spaces and footnotes. This is the [standard page according to ITU](https://itustudent.itu.dk/Study-Administration/Project-Work/Workload-and-Project-Size)
+A page is understood as 2400 characters/units per page, including spaces and footnotes. This is the [standard page according to ITU.](https://itustudent.itu.dk/Study-Administration/Project-Work/Workload-and-Project-Size)
 
 Each report may be ±10% of the total page count.
 
