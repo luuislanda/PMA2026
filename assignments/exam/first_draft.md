@@ -4,13 +4,12 @@
 
 **Table of Contents**
 
-- [Practical Information](#practical-information)
 - [Description of Exam](#description-of-exam)
   - [What is a "prototype" in this exam?](#what-is-a-prototype-in-this-exam)
-- [Practical Information](#practical-information)
-  - [How to Submit Your Exam](#how-to-submit-your-exam)
-  - [Checklist for Submission](#checklist-for-submission)
-  - [Generative AI Use](#generative-ai-use)
+  - [Practical Information](#practical-information)
+    - [How to Submit Your Exam](#how-to-submit-your-exam)
+    - [Checklist for Submission](#checklist-for-submission)
+    - [Generative AI Use](#generative-ai-use)
 - [Theme of the Application/Prototype](#theme-of-the-applicationprototype)
   - [Theme Option 1: Open theme](#theme-option-1-open-theme)
   - [Theme Option 2: Select a theme from the list below](#theme-option-2-select-a-theme-from-the-list-below)
@@ -124,13 +123,13 @@ If you use any generative AI tools (such as ChatGPT, Claude, or similar LLMs) in
 Failing to clearly mark generative AI usage can result in failing the exam on grounds of plagiarism or fraud. For more information, please refer to the [Generative AI Guidelines for Students at ITU](https://itustudent.itu.dk/-/media/ITU-Student/Study-Administration/GAI/Generative-AI-guidelines-for-students-Spring-2026-pdf.pdf)
 
 
-## Theme of the Application/Prototype
+### Theme of the Application/Prototype
 
 > _The course and the ILOs clearly state this is a course about **hands-on programming of mobile applications.** You will _not_ be evaluated on the concept of your app/prototype‼️_
 
 For your exam, you have two options for choosing a theme. You may also build upon the work you completed for Assignment 2 if you wish, but this is optional. You are also free to start fresh with a different concept.
 
-### Theme Option 1: Open theme
+#### Theme Option 1: Open theme
 If you choose option 1, the app/prototype can be (almost) anything. It just has to be a prototype of an "app" and conform to the minimal requirements set below. 
 
 In practice, this means this can be a health care app, a podcast app, a journal app, a dictionary, pretty much anything.
@@ -152,7 +151,7 @@ If you are unsure whether your app is feasible, you can always contact the cours
 
 
 
-### Theme Option 2: Select a theme from the list below
+#### Theme Option 2: Select a theme from the list below
 
 If you find the open theme intimidating, pick one of the app themes below for your exam:
 
