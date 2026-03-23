@@ -75,9 +75,9 @@ If you are unsure of how to make a `.zip` file, or your `.zip` file is taking to
 
 To obtain a link to your figma design, you can follow the guide [here.](https://help.figma.com/hc/en-us/articles/360040531773-Share-files-and-prototypes)
 
-## Checklist for Submission
+### Checklist for Submission
 
-### Code File Submission Checklist
+#### Code File Submission Checklist
 
 Here is the checklist for the files that must be submitted for this exam:
 
@@ -92,7 +92,7 @@ Here is the checklist for the files that must be submitted for this exam:
   - [ ] screens (folder)
     - [ ] all your screen `.js` files
 
-### Written Report Submission Checklist
+#### Written Report Submission Checklist
 
 - [ ] Written report as a PDF file
   - [ ] Cover page
@@ -114,7 +114,7 @@ Here is the checklist for the files that must be submitted for this exam:
     - [ ] ½ page reflection on Assignment 2
 
 
-## Generative AI Use
+### Generative AI Use
 
 If you use any generative AI tools (such as ChatGPT, Claude, or similar LLMs) in your project, you **must clearly mark** where and how they were used. This includes:
 - Specific prompts you provided
@@ -236,7 +236,7 @@ Your prototype _must_ be able to share data/variables across at least two screen
 
 ### Minimum Accessibility Requirements
 
-The prototype must attempt to be compliant with WCAG 2.2 Level A. In practical terms, this means:
+Your prototypes interactive functions **must** be fully compliant with the WCAG's 2.2 guidelines at Level A. 
 
 - Provide meaningful alt text for all meaningful images.
 - Do not rely on color alone to communicate information.
@@ -244,6 +244,8 @@ The prototype must attempt to be compliant with WCAG 2.2 Level A. In practical t
 - Use clear page titles and headings so users can understand where they are in the app.
 - Maintain a clear heading hierarchy across screens.
 - Ensure sufficient color contrast for text (recommended from Level AA, required in this exam).
+
+The rest of the prototype must attempt to be compliant with the same standards, though the requirement is mainly for the interactive components.
 
 #### Accesibility Implementation Refrence
 
