@@ -7,10 +7,10 @@ mdc: true
 hideInToc: true
 ---
 
-# Session 8: Alignment and Expectations
+# Session 8: Alignment of Expectations
 
 
-What the exam is really asking from your prototype
+Exam draft and aligning our expectations for the rest of the semester
 
 
 <div class="abs-br m-6 flex gap-2">

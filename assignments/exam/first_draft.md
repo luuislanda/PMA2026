@@ -136,7 +136,7 @@ It is **not** expected that your prototype will look _exactly_ like the Figma de
 
 A prototype is a **working**, functional mobile app built with React Native that demonstrates your ability to translate design ideas into actual code. The user should be able to interact with buttons, enter data, and see that data in different parts of the app. Additionally, a prototype is a demonstration of your app's core idea and concept. It transforms the abstract concept in your head into something tangible that users can experience and understand.
 
-A prototype doesn't need to be a fully-featured app. You can have simplified features or incomplete functionality, but you should explain those choices in the written report. The course emphasizes hands-on programming and your development process rather than design polish or concept perfection, and the exam follows that same emphasis.
+A prototype doesn't need to be a fully-featured app. You can have simplified features or incomplete functionality, but you should explain those choices in the written report. The course emphasizes hands-on programming for prototypes rather than design polish or concept perfection, and the exam follows that same emphasis.
 
 ## Theme of the Application/Prototype
 
@@ -278,59 +278,6 @@ As part of the exam submission, you must include a written report (minimum 8-11 
 
 ### Written Report Structure
 
-#### Collaborative Sections (7 pages)
-
-**Cover** (does not count as a page)
-- Title of prototype/app
-- Group member names
-- One-line summary of each member's main contribution
-
-**1. Introduction** 
-- What app you built
-- Theme/concept and intended users
-- What the prototype is meant to demonstrate
-
-**2. Background and Ideation** 
-- Initial app idea and motivation
-- Existing apps or references that informed your concept
-- How you moved from early sketches to a concrete Figma structure
-
-**3. Design Rationale and Guidelines** 
-- Which design guidelines from the course (Sessions 1 and 10) you used
-- How/If those guidelines influenced your key UI/UX choices
-- Any deliberate design trade-offs you made in the pursuit of your vision
-
-**4. Technical Implementation Overview** 
-- How the app is structured in React Native (screens, navigation, key components)
-- How data is shared across screens
-- How design was translated from Figma into code
-
-**5. Evaluation, Decisions, and Reflection** 
-- Main learnings from the prototyping and coding process
-- Feedback received and what you changed based on it
-- Main technical challenges and how you solved them
-- Current limitations and realistic future improvements
-
-#### Individual Sections (one section per student) (1-2 pages per student)
-
-Each student should include a section with their **name and individual contribution** to the app development. Each person should include:
-
-- Which component(s)/screens you implemented and how they function
-- Key React Native choices you made and any challenges you faced
-- How your part connects to the rest of the app
-- Other contributions (if any), such as Figma/UI work or collaborative coding
-- At least one code snippet with explanation of what it does and why it matters for the overall app
-
-#### Individual Assignment Reflections (1 page per student)
-
-In addition to the report above, each student must include a **1-page individual reflection** on the two course assignments. This page is submitted in addition to the report and is **not included** in the report page count. The page is structured as follows:
-
-- **½ page — Reflection on Assignment 1:** What did you learn from this assignment? What would you do differently? How did it inform your work on the exam?
-- **½ page — Reflection on Assignment 2:** What did you learn from this assignment? What would you do differently? How did it inform your work on the exam?
-
-### References
-
-You can include references to the academic papers introduced in the course and links to online resources provided throughout the course. However, **since this is a report focused mainly on the code and what you did in this project, references are optional.**
 
 ### Sample Table of Contents
 
@@ -374,6 +321,63 @@ Cover Page
 References (optional)
 Appendix (optional)
 ```
+
+#### Collaborative Sections (7 pages)
+
+**Cover** (does not count as a page)
+- Title of prototype/app
+- Group member names
+- One-line summary of each member's main contribution
+
+**1. Introduction** 
+- What app you built
+- Theme/concept and intended users
+- What the prototype is meant to demonstrate
+
+**2. Background and Ideation** 
+- Initial app idea and motivation
+- Existing apps or references that informed your concept
+- How you moved from early sketches to a concrete Figma structure
+
+**3. Design Rationale and Guidelines** 
+- Which design guidelines from the course (Sessions 1 and 10) you used
+- How/If those guidelines influenced your key UI/UX choices
+- Any deliberate design trade-offs you made in the pursuit of your vision
+
+**4. Technical Implementation Overview** 
+- How the app is structured in React Native (screens, navigation, key components)
+- What interactive flow are you showing:
+  - Example: add entry -> save -> see it in history -> open details
+- How data is shared across screens
+- How design was translated from Figma into code
+
+**5. Collective Reflection** 
+- What did you learn through this process of making a prototype for your app?
+- Feedback received and what you changed based on it
+- Main technical challenges and how you approached them
+- Current limitations and realistic future improvements
+
+#### Individual Sections (one section per student) (1-2 pages per student)
+
+Each student should include a section with their **name and individual contribution** to the app development. Each person should include:
+
+- Which component(s)/screens you implemented and how they function
+- Key React Native choices you made and any challenges you faced
+- How your part connects to the rest of the app
+- Other contributions (if any), such as conceptual ideation, Figma/UI work or collaborative coding
+- At least one code screenshot with explanation of what it does and why it matters for the overall app
+
+#### Individual Assignment Reflections (1 page per student)
+
+In addition to the report above, each student must include a **1-page individual reflection** on the two course assignments. This page is submitted in addition to the report and is **not included** in the report page count. The page is structured as follows:
+
+- **½ page — Reflection on Assignment 1:** What did you learn from this assignment? What would you do differently? How did it inform your work on the exam?
+- **½ page — Reflection on Assignment 2:** What did you learn from this assignment? How did it build your skills for the exam? Do you think you would do something different?
+
+### References
+
+You can include references to the academic papers introduced in the course and links to online resources provided throughout the course. However, **since this is a report focused mainly on the code and what you did in this project, references are optional.**
+
 
 ### Advice for the Written Report
 
