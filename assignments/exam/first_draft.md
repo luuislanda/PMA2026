@@ -314,24 +314,31 @@ Appendix (optional)
 ### Quick example of number of pages according to group size
 
 Group of 2 people:
+
+- **Main written report total: 11 pages**
   - Collaborative sections: 7 pages
   - Individual Sections: 4 pages
-  - Main written report total: 11 pages
-  - Individual Assignment Reflections: 2 pages total (1 per student, additional)
+- Individual Assignment Reflections: 2 pages total (1 per student, additional)
+
+Total pages submitted: 13 pages
 
 Group of 3 people:
+
+- **Main written report total: 11 pages**
   - Collaborative sections: 7 pages
   - Individual Sections: 4 pages total (shared across 3 students)
-  - Main written report total: 11 pages
-  - Individual Assignment Reflections: 3 pages total (1 per student, additional)
+- Individual Assignment Reflections: 3 pages total (1 per student, additional)
+
+Total pages submitted: 14 pages
 
 Group of 4 people:
+
+- **Main written report total: 11 pages**
   - Collaborative sections: 7 pages
   - Individual Sections: 4 pages total (shared across 4 students)
-  - Main written report total: 11 pages
-  - Individual Assignment Reflections: 4 pages total (1 per student, additional)
+- Individual Assignment Reflections: 4 pages total (1 per student, additional)
 
-> Note: In group submissions, 11 pages is always the main report total (collaborative + individual contribution sections), regardless of whether there are 2, 3, or 4 students.
+Total pages submitted: 15 pages
 
 
 #### Collaborative Sections (7 pages)
