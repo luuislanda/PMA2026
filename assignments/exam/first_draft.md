@@ -20,13 +20,13 @@
   - [Minimum Accessibility Requirements](#minimum-accessibility-requirements)
 - [Written Report](#written-report)
   - [Written Report Structure](#written-report-structure)
-  - [Example of a Group Submission](#example-of-a-group-submission)
-  - [Example TOC for an Individual Submission](#example-toc-for-an-individual-submission)
-  - [Quick example of number of pages according to group size](#quick-example-of-number-of-pages-according-to-group-size)
-  - [Collaborative Sections](#collaborative-sections-7-pages)
-  - [Individual Sections](#individual-sections-one-section-per-student-1-2-pages-per-student)
-  - [Individual Assignment Reflections](#individual-assignment-reflections-1-page-per-student)
+    - [Example of a Group Submission](#example-of-a-group-submission)
+    - [Example TOC for an Individual Submission](#example-toc-for-an-individual-submission)
+    - [Collaborative Sections](#collaborative-sections)
+    - [Individual Sections](#individual-sections)
+    - [Individual Assignment Reflections](#individual-assignment-reflections)
   - [References](#references)
+  - [Number of pages](#number-of-pages)
   - [Advice for the Written Report](#advice-for-the-written-report)
 - [Template Starting Code](#template-starting-code)
 - [Example of Prototypes with the Minimum Requirements](#example-of-prototypes-with-the-minimum-requirements)
@@ -272,17 +272,17 @@ Cover Page
 2. Background and Ideation
 3. Design Rationale and Guidelines
 4. Technical Implementation Overview
-5. Evaluation, Decisions, and Reflection
+5. Collective Reflection
 
 6. Individual Contribution: Student A
 7. Individual Contribution: Student B
 8. Individual Contribution: Student C
 9. Individual Contribution: Student D
 
-10. Individual Assignment Reflection: Student A
-11. Individual Assignment Reflection: Student B
-12. Individual Assignment Reflection: Student C
-13. Individual Assignment Reflection: Student D
+10. Individual Assignment Reflections: Student A
+11. Individual Assignment Reflections: Student B
+12. Individual Assignment Reflections: Student C
+13. Individual Assignment Reflections: Student D
 
 References (optional)
 Appendix (optional)
@@ -297,60 +297,17 @@ Cover Page
 2. Background and Ideation
 3. Design Rationale and Guidelines
 4. Technical Implementation Overview
-5. Evaluation, Decisions, and Reflection
-6. Individual Assignment Reflection
+5. Collective Reflection
+6. Individual Assignment Reflections
 
 References (optional)
 Appendix (optional)
 ```
 
 
-### Number of pages
+#### Collaborative Sections 
 
-A page is understood as 2400 characters/units per page, including spaces and footnotes. This is the [standard page according to ITU](https://itustudent.itu.dk/Study-Administration/Project-Work/Workload-and-Project-Size)
-
-Each report may be ±10% of the total page count.
-
-#### Examples of number of pages according to group size
-
-Individual submission:
-
-- **Main written report total**: 7 pages
-- **Individual Assignment Reflections**: 1 page total (1 per student, additional)
-
-Total pages submitted: 8 (±10%) distributed as the student sees fit
-
-Group of 2 people:
-
-- **Main written report total**: 11 pages
-  - Collaborative sections: 7 pages
-  - Individual Sections: 4 pages
-- **Individual Assignment Reflections**: 2 pages total (1 per student, additional)
-
-Total pages submitted: 13 pages (±10%)
-
-Group of 3 people:
-
-- **Main written report total: 11 pages**
-  - Collaborative sections: 7 pages
-  - Individual Sections: 4 pages total (shared across 3 students)
-- **Individual Assignment Reflections**: 3 pages total (1 per student, additional)
-
-Total pages submitted: 14 pages (±10%)
-
-Group of 4 people:
-
-- **Main written report total: 11 pages**
-  - Collaborative sections: 7 pages
-  - Individual Sections: 4 pages total (shared across 4 students)
-- **Individual Assignment Reflections**: 4 pages total (1 per student, additional)
-
-Total pages submitted: 15 pages (±10%)
-
-
-#### Collaborative Sections (7 pages)
-
-**Cover** (does not count as a page)
+**Cover** 
 - **Question this section answers:** Who made this project, and what is each person's main contribution?
 - Include project title, course name, and exam period.
 - List all group members exactly as registered in LearnIT.
@@ -395,7 +352,7 @@ Total pages submitted: 15 pages (±10%)
 - Acknowledge current limitations of prototype.
 - Propose realistic next steps if you had more time.
 
-#### Individual Sections (one section per student) (1-2 pages per student)
+#### Individual Sections
 
 Each student should include a section with their **name and individual contribution** to the app development. Each person should include:
 
@@ -406,7 +363,7 @@ Each student should include a section with their **name and individual contribut
 - Show how your part integrates with other team members' work.
 - Mention any additional contributions (Figma, testing, integration, debugging, coordination).
 
-#### Individual Assignment Reflections (1 page per student)
+#### Individual Assignment Reflections
 
 In addition to the report above, each student must include a **1-page individual reflection** on the two course assignments. This page is submitted in addition to the report and is **not included** in the report page count. The page is structured as follows:
 
@@ -418,6 +375,50 @@ In addition to the report above, each student must include a **1-page individual
 ### References
 
 You can include references to the academic papers introduced in the course and links to online resources provided throughout the course. However, _since this is a report focused mainly on the code and what you did in this project, references are optional._
+
+
+
+### Number of pages
+
+A page is understood as 2400 characters/units per page, including spaces and footnotes. This is the [standard page according to ITU](https://itustudent.itu.dk/Study-Administration/Project-Work/Workload-and-Project-Size)
+
+Each report may be ±10% of the total page count.
+
+#### Examples of number of pages according to group size
+
+##### Individual submission:
+
+- **Main written report total**: 7 pages
+- **Individual Assignment Reflections**: 1 page total (1 per student, additional)
+
+Total pages submitted: 8 (±10%) distributed as the student sees fit
+
+##### Group of 2 people:
+
+- **Main written report total**: 11 pages
+  - Collaborative sections: 7 pages
+  - Individual Sections: 4 pages
+- **Individual Assignment Reflections**: 2 pages total (1 per student, additional)
+
+Total pages submitted: 13 pages (±10%)
+
+##### Group of 3 people:
+
+- **Main written report total: 11 pages**
+  - Collaborative sections: 7 pages
+  - Individual Sections: 4 pages total (shared across 3 students)
+- **Individual Assignment Reflections**: 3 pages total (1 per student, additional)
+
+Total pages submitted: 14 pages (±10%)
+
+##### Group of 4 people:
+
+- **Main written report total: 11 pages**
+  - Collaborative sections: 7 pages
+  - Individual Sections: 4 pages total (shared across 4 students)
+- **Individual Assignment Reflections**: 4 pages total (1 per student, additional)
+
+Total pages submitted: 15 pages (±10%)
 
 
 ### Advice for the Written Report
