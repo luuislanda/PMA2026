@@ -5,11 +5,12 @@
 **Table of Contents**
 
 - [Practical Information](#practical-information)
+- [Description of Exam](#description-of-exam)
+  - [What is a "prototype" in this exam?](#what-is-a-prototype-in-this-exam)
+- [Practical Information](#practical-information)
   - [How to Submit Your Exam](#how-to-submit-your-exam)
   - [Checklist for Submission](#checklist-for-submission)
   - [Generative AI Use](#generative-ai-use)
-- [Description of Exam](#description-of-exam)
-  - [What is a "prototype" in this exam?](#what-is-a-prototype-in-this-exam)
 - [Theme of the Application/Prototype](#theme-of-the-applicationprototype)
   - [Theme Option 1: Open theme](#theme-option-1-open-theme)
   - [Theme Option 2: Select a theme from the list below](#theme-option-2-select-a-theme-from-the-list-below)
@@ -23,13 +24,29 @@
   - [Practical Information about Written Report](#practical-information-about-written-report)
   - [Written Report Structure](#written-report-structure)
   - [Sample Table of Contents](#sample-table-of-contents)
+  - [Collaborative Sections](#collaborative-sections-7-pages)
+  - [Individual Sections](#individual-sections-one-section-per-student-1-2-pages-per-student)
+  - [Individual Assignment Reflections](#individual-assignment-reflections-1-page-per-student)
   - [References](#references)
   - [Advice for the Written Report](#advice-for-the-written-report)
 - [Template Starting Code](#template-starting-code)
 
 
+## Description of Exam
 
-## Practical Information
+The exam requires you to demonstrate hands-on mobile app prototyping through React Native, supported by a written report that documents your technical work, design approach, and key reflections.
+
+Your prototype must include multiple screens, sharing of data across at least 2 of them, and be supported by a Figma design file. The UI and styling of your prototype must be based on this Figma design file, and your code must be compliant with the WCAG 2.2 A level guidelines for accessibility outlined below.
+
+It is **not** expected that your prototype will look _exactly_ like the Figma design you've created. However, there should be a clear correspondence between them, and any differences must be reflected upon and explained in your written report.
+
+### What is a "prototype" in this exam?
+
+A prototype is a **working**, functional mobile app built with React Native that demonstrates your ability to translate design ideas into actual code. The user should be able to interact with buttons, enter data, and see that data in different parts of the app. Additionally, a prototype is a demonstration of your app's core idea and concept. It transforms the abstract concept in your head into something tangible that users can experience and understand.
+
+A prototype doesn't need to be a fully-featured app. You can have simplified features or incomplete functionality, but you should explain those choices in the written report. The course emphasizes hands-on programming for prototypes rather than design polish or concept perfection, and the exam follows that same emphasis.
+
+### Practical Information
 
 - **Exam type:** Pass / Fail
 - **Group or individual:** This is a <u>group</u> exam (2–4 students) with an additional <u>individual</u> component. You may also work individually.
@@ -41,8 +58,6 @@
 - **Can I reuse my Assignment 2 code?** Yes, you are welcome to build on it. However, it is not a requirement.
 - **Is the concept/idea of my app evaluated?** No. You are evaluated on the minimal requirements set below and your reflection on the process.
 - **Screens required:** 5 app screens + 3 onboarding screens (8 total)
-
-
 
 ### How to Submit Your Exam
 
@@ -108,19 +123,6 @@ If you use any generative AI tools (such as ChatGPT, Claude, or similar LLMs) in
 
 Failing to clearly mark generative AI usage can result in failing the exam on grounds of plagiarism or fraud. For more information, please refer to the [Generative AI Guidelines for Students at ITU](https://itustudent.itu.dk/-/media/ITU-Student/Study-Administration/GAI/Generative-AI-guidelines-for-students-Spring-2026-pdf.pdf)
 
-## Description of Exam
-
-The exam requires you to demonstrate hands-on mobile app prototyping through React Native, supported by a written report that documents your technical work, design approach, and key reflections.
-
-Your prototype must include multiple screens, sharing of data across at least 2 of them, and be supported by a Figma design file. The UI and styling of your prototype must be based on this Figma design file, and your code must be compliant with the WCAG 2.2 A level guidelines for accessibility outlined below.
-
-It is **not** expected that your prototype will look _exactly_ like the Figma design you've created. However, there should be a clear correspondence between them, and any differences must be reflected upon and explained in your written report.
-
-### What is a "prototype" in this exam?
-
-A prototype is a **working**, functional mobile app built with React Native that demonstrates your ability to translate design ideas into actual code. The user should be able to interact with buttons, enter data, and see that data in different parts of the app. Additionally, a prototype is a demonstration of your app's core idea and concept. It transforms the abstract concept in your head into something tangible that users can experience and understand.
-
-A prototype doesn't need to be a fully-featured app. You can have simplified features or incomplete functionality, but you should explain those choices in the written report. The course emphasizes hands-on programming for prototypes rather than design polish or concept perfection, and the exam follows that same emphasis.
 
 ## Theme of the Application/Prototype
 
