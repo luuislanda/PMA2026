@@ -28,7 +28,7 @@
   - [References](#references)
   - [Advice for the Written Report](#advice-for-the-written-report)
 - [Template Starting Code](#template-starting-code)
-- [Examples of Prototypes with the Minimum Requirements](#examples-of-prototypes-with-the-minimum-requirements)
+- [Example of Prototypes with the Minimum Requirements](#example-of-prototypes-with-the-minimum-requirements)
   - [Cat Feeder App](#cat-feeder-app)
 
 
@@ -379,9 +379,9 @@ If you wish, you can use the template that was given to you for Assignment #2 th
 
 Feel free to repurpose any code you've written or seen in the course so far.
 
-## Examples of Prototypes with the Minimum Requirements
+## Example of Prototypes with the Minimum Requirements
 
-### Cat Feeder App
+**Cat Feeder App**
 
 I will put a finished example after I show it in Session 8
 
