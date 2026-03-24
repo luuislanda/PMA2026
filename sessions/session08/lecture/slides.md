@@ -453,7 +453,7 @@ layout: center
 layout: center
 ---
 
-Let's open menti again and vote
+Let's open Menti again and vote
 
 ---
 hideInToc: true

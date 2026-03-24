@@ -50,6 +50,7 @@ A prototype doesn't need to be a fully-featured app. You can have simplified fea
 ### Practical Information
 
 - **Exam type:** Pass / Fail
+- **Deadline:** Friday 29th of May, 2026
 - **Format:** This is a <u>group</u> exam (2–4 students) with an additional <u>individual</u> component.
   - You may also work alone, provided you are registerd as a group with 1 member
 - **What you submit:** A `.zip` file containing your code folder + written report as PDF
