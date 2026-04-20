@@ -32,7 +32,6 @@
   - [Cat Feeder App](#cat-feeder-app)
 - [Checklist for Submission](#checklist-for-submission)
 
-
 ## Description of Exam
 
 The exam requires you to demonstrate hands-on mobile app prototyping through React Native, supported by a written report that documents your technical work, design approach, and key reflections.
@@ -63,8 +62,6 @@ A prototype doesn't need to be a fully-featured app. You can have simplified fea
 
 #### How to Submit your Exam via LearnIT
 
-> This will be updated, once I hear back from ITU about their new WISEflow system. In theory it should be the same as previous assignments but we'll see
-
 There is an `Exam Activity` on LearnIT. There, one person from your group should submit the exam for all of your group.
 
 
@@ -87,6 +84,10 @@ If you use any generative AI tools (such as ChatGPT, Claude, or similar LLMs) in
 
 Failing to clearly mark generative AI usage can result in failing the exam on grounds of plagiarism or fraud. For more information, please refer to the [Generative AI Guidelines for Students at ITU](https://itustudent.itu.dk/-/media/ITU-Student/Study-Administration/GAI/Generative-AI-guidelines-for-students-Spring-2026-pdf.pdf)
 
+For example, if you used Generative AI to add a button you need to say:
+- What prompt you used to get that button
+- What came out (screenshot of code) and if you modified it
+- Reflect on this later on in the reflection
 
 ### Theme of the Application/Prototype
 
@@ -113,10 +114,6 @@ For example, You are not allowed to make:
 - A cat/pet feeding app which we built in class
 
 If you are unsure whether your app is feasible, you can always contact the course manager.
-
-
-
-
 
 #### Theme Option 2: Select a theme from the list below
 
@@ -317,6 +314,7 @@ Appendix (optional)
 - Explain 2-3 main technical problems you encountered and how you solved (or partially solved) them.
 - Acknowledge current limitations of prototype.
 - Propose realistic next steps if you had more time.
+- How was it to meet the accesibility requirements?
 
 #### Individual Sections
 
@@ -341,8 +339,6 @@ In addition to the report above, each student must include a **1-page individual
 ### References
 
 You can include references to the academic papers introduced in the course and links to online resources provided throughout the course. However, _since this is a report focused mainly on the code and what you did in this project, references are optional._
-
-
 
 ### Number of pages
 
@@ -404,9 +400,16 @@ Feel free to repurpose any code you've written or seen in the course so far.
 
 **Cat Feeder App**
 
-I will put a finished example after I show it in Session 8
+The code for this app without the onboarding is available in Session 9, this is the App we built together in class.
 
-
+![alt text](assets/imgs/IMG_0686.PNG) 
+![alt text](assets/imgs/IMG_0687.PNG) 
+![alt text](assets/imgs/IMG_0688.PNG) 
+![alt text](assets/imgs/IMG_0689.PNG) 
+![alt text](assets/imgs/IMG_0690.PNG) 
+![alt text](assets/imgs/IMG_0691.PNG) 
+![alt text](assets/imgs/IMG_0692.PNG) 
+![alt text](assets/imgs/IMG_0693.PNG)
 
 ### Checklist for Submission
 
@@ -427,7 +430,7 @@ Here is the checklist for the files that must be submitted for this exam:
 
 #### Written Report Submission Checklist
 
-Here is the checklist for the written report that must be submitted for this exam:
+Here is the checklist for the written report that must be submitted with this exam:
 
 
 - [ ] Written report as a PDF file
