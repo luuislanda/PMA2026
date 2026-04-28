@@ -310,7 +310,7 @@ Appendix (optional)
 
 **Question this section answers:** What did you learn from the process, what challenges did you face, and how would you improve the prototype further?
 - Summarize top 3 team learnings from design + coding.
-- Describe feedback received (in class or from peers) and concrete changes made from it.
+- If relevant, describe feedback received (in class or from peers) and concrete changes made from it.
 - Explain 2-3 main technical problems you encountered and how you solved (or partially solved) them.
 - Acknowledge current limitations of prototype.
 - Propose realistic next steps if you had more time.
