@@ -316,17 +316,19 @@ Appendix (optional)
 - Propose realistic next steps if you had more time.
 - How was it to meet the accesibility requirements?
 
-#### Individual Sections *
+#### Individual Sections
 
 Each student should include a section with their **name and individual contribution** to the app development. 
 
-Each student should write 1 page related to their contribution, it should include the following:
+This section is always 4 pages long, irrespective of how many students there are in a group.
+
+This section should include the following:
 
 - List the exact components/screens you coded.
-- If relevant, explain your implementation choices and trade-offs.
+- Explain your implementation choices and trade-offs.
 - Include at least one annotated code screenshot of your contribution.
 - Show how your part integrates with other team members' work.
-- If relevant, mention any additional contributions (Figma, testing, integration, debugging, coordination).
+- Mention any additional contributions (Figma, testing, integration, debugging, coordination).
 
 #### Individual Assignment Reflections
 
