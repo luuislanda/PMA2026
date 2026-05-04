@@ -1,6 +1,6 @@
 # Programming Mobile Application 2026
 
-# Exam Brief - Draft 1 for Session 8 
+# Exam Brief
 
 **Table of Contents**
 
@@ -165,7 +165,7 @@ Additionally, across the screens the following requirements are set:
 - 2 Screens
   - Your onboarding screens should be the first thing that appears when the app is run (Introduced in Session 9 or 10)
   - They must explain to a new user, the logic of the app and how to use it
-  - They should include a "Skip" button to go straight to the app
+  - They must include a "Skip" button to go straight to the app
 
 #### React Native Components and Functions
 
@@ -282,7 +282,7 @@ Appendix (optional)
 **2. Background and Ideation** 
 
 **Question this section answers:** Where did the idea come from, and how did it develop into a concrete prototype concept?
-- Explain motivation: why this app idea and why now.
+- Explain motivation: why this app idea and why now?.
 - Show 1-2 references to apps or other media and how they influenced your app.
 - Describe how you went from idea and sketches to a Figma UI design
   - If relevant, point out one major change in direction and why you made it.
@@ -316,16 +316,17 @@ Appendix (optional)
 - Propose realistic next steps if you had more time.
 - How was it to meet the accesibility requirements?
 
-#### Individual Sections
+#### Individual Sections *
 
-Each student should include a section with their **name and individual contribution** to the app development. Each person should include:
+Each student should include a section with their **name and individual contribution** to the app development. 
 
-**Question this section answers:** What did you personally contribute to the project, and why does that contribution matter?
-- Identify the exact components/screens you owned.
-- Explain your implementation choices and trade-offs.
+Each student should write 1 page related to their contribution, it should include the following:
+
+- List the exact components/screens you coded.
+- If relevant, explain your implementation choices and trade-offs.
 - Include at least one annotated code screenshot of your contribution.
 - Show how your part integrates with other team members' work.
-- Mention any additional contributions (Figma, testing, integration, debugging, coordination).
+- If relevant, mention any additional contributions (Figma, testing, integration, debugging, coordination).
 
 #### Individual Assignment Reflections
 
