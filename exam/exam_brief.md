@@ -142,7 +142,7 @@ To pass the exam, you must complete **all** of the following requirements:
 You must make a design file that contains all screens in Figma.
 
 Additionally, across the screens the following requirements are set:
-- Have three interactive components with variants (Introduced in Session 3)
+- Have two interactive components with variants (Introduced in Session 3)
 - These interactive components and their variants must also be coded in React Native
     - In case you weren't succesful in coding them, explain what was challenging about translating the Figma interactivity to React Native.
 
@@ -163,9 +163,10 @@ Additionally, across the screens the following requirements are set:
 > OBS: This section will have slight changes after we introduce the topic in class
 
 - 2 Screens
-  - Your onboarding screens should be the first thing that appears when the app is run (Introduced in Session 9 or 10)
+  - Your onboarding screens should be the first thing that appears when the app is run
   - They must explain to a new user, the logic of the app and how to use it
   - They must include a "Skip" button to go straight to the app
+  - Ideally, the onboarding showcases the "feature" of the app you are trying to demo
 
 #### React Native Components and Functions
 
@@ -316,11 +317,13 @@ Appendix (optional)
 - Propose realistic next steps if you had more time.
 - How was it to meet the accesibility requirements?
 
-#### Individual Sections
+#### Individual Contributions
 
-Each student should include a section with their **name and individual contribution** to the app development. 
+This section is a requirement by ITU, each student should include a section with their **name and individual contribution** to the app development. 
 
 This section is always 4 pages long, irrespective of how many students there are in a group.
+
+I am aware that in some groups, the effort has very much been a close team effort, in which case you are free to make a longer collective discussion of how you worked together. If this is the case for your group, make sure to include how you worked together on specific screens/components/designs and the choices you made along the way.
 
 This section should include the following:
 
@@ -362,7 +365,7 @@ Total pages submitted: 8 (±10%) distributed as the student sees fit
 
 - **Main written report total**: 11 pages
   - Collaborative sections: 7 pages
-  - Individual Sections: 4 pages
+  - Individual Contributions: 4 pages
 - **Individual Assignment Reflections**: 2 pages total (1 per student, additional)
 
 Total pages submitted: 13 pages (±10%)
@@ -371,7 +374,7 @@ Total pages submitted: 13 pages (±10%)
 
 - **Main written report total: 11 pages**
   - Collaborative sections: 7 pages
-  - Individual Sections: 4 pages total (shared across 3 students)
+  - Individual Contributions: 4 pages total (shared across 3 students)
 - **Individual Assignment Reflections**: 3 pages total (1 per student, additional)
 
 Total pages submitted: 14 pages (±10%)
@@ -380,7 +383,7 @@ Total pages submitted: 14 pages (±10%)
 
 - **Main written report total: 11 pages**
   - Collaborative sections: 7 pages
-  - Individual Sections: 4 pages total (shared across 4 students)
+  - Individual Contributions: 4 pages total (shared across 4 students)
 - **Individual Assignment Reflections**: 4 pages total (1 per student, additional)
 
 Total pages submitted: 15 pages (±10%)
