@@ -38,7 +38,7 @@ The exam requires you to demonstrate hands-on mobile app prototyping through Rea
 
 Your prototype must include multiple screens, sharing of data across at least 2 of them, and be supported by a Figma design file. The UI and styling of your prototype must be based on this Figma design file, and your code must be compliant with the WCAG 2.2 A level guidelines for accessibility outlined below.
 
-It is **not** expected that your prototype will look _exactly_ like the Figma design you've created. However, there should be a clear correspondence between them, and any differences must be reflected upon and explained in your written report.
+It is **not** expected that your prototype will look _exactly_ like the Figma design you've created. However, there should still look similar. Any significant differences that hapepned because translating the design to code was to difficult, should appear in your reflections.
 
 ### What is a "prototype" in this exam?
 
